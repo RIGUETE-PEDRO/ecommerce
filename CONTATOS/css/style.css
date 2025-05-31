@@ -43,29 +43,65 @@
   background-color: #D4AF37;
   border-color: #D4AF37;
   transition: background-color 0.3s ease;
+  color: #000;
 }
 
 .btn-primary:hover {
   background-color: #b68c30;
   border-color: #b68c30;
+  color: #000;
 }
 
 /* Botão de comprar (btn-success) já utiliza o estilo padrão do Bootstrap, mas você pode ajustar se necessário */
 input{
-  opacity: 0.4;
+  
+  
 }
 
 .fundo{
                   /* opacidade do fundo */
-  background-image: url('../../img/fundosobre.png');              /* opacidade do fundo */
+  background-image: url('../../img/contatofundo.jpg');              /* opacidade do fundo */
   background-size: cover;        /* cobre toda a área */
   background-position: center;   /* centraliza a imagem */
   background-repeat: no-repeat;  /* evita repetição */
-  padding: 5em 2em;            /* espaço interno */
+  padding: 3em 2em;            /* espaço interno */
   border-radius: 16px;           /* cantos arredondados */
   color: #000;                   /* texto em preto (pode ajustar) */
 }
 
-.form{
-  opacity: 1.0;
+.fundo .form{
+   max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Domine', serif;
+    color: #ffffff;
+    background-color: black;
+    border: #D4AF37 2px solid;
+    border-radius: 12px;
+    box-shadow: 0 0em 10em rgba(0, 0, 0, 1.7);
+
+}
+
+.form-label, .mb-4{
+  color: #D4AF37 ;
+}
+
+.form-control{
+  background-color: #000;
+  color: #D4AF37;
+  
+}
+
+
+.form-control::placeholder{
+  background-color: #000;
+  color: #95948f;
+  
+}
+
+.form-control:focus{
+  border-color: #D4AF37;
+  box-shadow: 0 0 0.25rem rgba(212, 175, 55, 0.25);
+  background-color: #000;
+  color: #D4AF37;
 }

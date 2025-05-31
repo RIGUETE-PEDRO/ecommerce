@@ -1,4 +1,4 @@
-.add-to-cart span{
+/* .add-to-cart span{
     display: block;
     text-align: center;
     position: relative;
@@ -31,5 +31,5 @@
     background: var(--background,var(--background-default));
     transform: scaleX(var(--background-scale))
     translateZ(0);
-}
+} */
 
