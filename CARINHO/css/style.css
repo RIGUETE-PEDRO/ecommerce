@@ -1,0 +1,120 @@
+
+
+
+#country {
+    background-color: #fff;
+    color: #000;
+  }
+
+  /* opções da lista */
+  #country option {
+    background-color: #000; /* fundo preto */
+    color: #fff;            /* texto branco */
+  }
+
+h4 {
+  text-align: center;
+  font-size: 22px;
+}
+
+.titulo-pedido i {
+  margin-right: 10px;
+  color: #28a745; /* cor do carrinho (pode trocar) */
+}
+
+p{
+  color: black;
+}
+
+.card {
+  border-radius: 12px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+.btn-minus, .btn-plus {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantidade {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.btn-delete {
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+
+.subtotal {
+  font-size: 15px;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.card {
+  border-radius: 12px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+.btn-minus,
+.btn-plus {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantidade {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.btn-delete {
+  margin-top: 0.5rem;
+  font-size: 14px;
+}
+
+.subtotal {
+  font-size: 15px;
+}
+
+.btn-warning {
+  background-color: #D4AF37;
+  color: #fff;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #b8942f;
+}
+
+.text-success {
+  font-weight: bold;
+  font-size: 18px;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | EcoBelle</title>
+    <link rel="icon" href="../img/iconsite.png" type="image/png">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet" />
+    <meta nome="theme-color" content="#000000">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg" style="background-color: #000000; border-bottom: 1px solid #D4AF37;">
+            <div class="container-fluid">
+
+                <img src="../img/image-removebg-preview (2).png" alt="Logo" width="100em">
+                <a class="navbar-brand" href="#" style="color: #D4AF37; font-weight: bold;">EcoBelle</a>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="search-input">
+                    <button class="search-button">&#128269;</button>
+                </div>
+
+
+                <div class="navbar-section center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"
+                            style="filter: invert(75%) sepia(90%) saturate(500%) hue-rotate(15deg);"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../PRODUTOS/index-produto.html">PRODUTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../SOBRE/index-sobre.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../CONTATOS/index_contatos.html">CONTATO</a>
+                        </li>
+                        <a id="id-produto" class="cart-button-shover" aria-label="Carrinho de compras" href="#">
+                            <img src="../img/shopping-cart_preto.png" alt="Carrinho de compras hover"
+                                class="cart-icon default-icon">
+
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5 mb-5">
+            <h2 class="mb-4 text-center" style="color: #D4AF37;">Finalizar Compra</h2>
+            <form>
+                <div class="row">
+                    <!-- Dados Pessoais -->
+                    <div class="col-md-6">
+                        <h5 style="color: #D4AF37;">Dados Pessoais</h5>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome completo</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpf" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+
+                    <!-- Endereço de Entrega -->
+                    <div class="col-md-6">
+                        <h5 style="color: #D4AF37;">Endereço de Entrega</h5>
+                        <div class="mb-3">
+                            <label for="cep" class="form-label">CEP</label>
+                            <input type="text" class="form-control" id="cep" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rua" class="form-label">Rua</label>
+                            <input type="text" class="form-control" id="rua" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numero" class="form-label">Número</label>
+                            <input type="text" class="form-control" id="numero" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="complemento" class="form-label">Complemento</label>
+                            <input type="text" class="form-control" id="complemento">
+                        </div>
+                        <div class="mb-3">
+                            <label for="bairro" class="form-label">Bairro</label>
+                            <input type="text" class="form-control" id="bairro" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cidade" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="estado" class="form-label">Estado</label>
+                            <input type="text" class="form-control" id="estado" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagamento -->
+                <h5 class="mt-4" style="color: #D4AF37;">Pagamento</h5>
+                <div class="mb-3">
+                    <label class="form-label">Forma de Pagamento</label>
+                    <select class="form-select" id="formaPagamento" required onchange="toggleCamposCartao(this.value)">
+                        <option value="">Selecione</option>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="cartao">Cartão de debito</option>
+                        <option value="pix">PIX</option>
+                        <option value="boleto">Boleto Bancário</option>
+                    </select>
+                </div>
+
+                <!-- Cartão de crédito -->
+                <div id="dadosCartao" style="display: none;">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="numeroCartao" class="form-label">Número do Cartão</label>
+                            <input type="text" class="form-control" id="numeroCartao">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validade" class="form-label">Validade</label>
+                            <input type="text" class="form-control" id="validade" placeholder="MM/AA">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cvv">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nomeCartao" class="form-label">Nome impresso no cartão</label>
+                            <input type="text" class="form-control" id="nomeCartao">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resumo do pedido -->
+                <div class="container my-5">
+                    <h3 class="text-center text-warning mb-4">Resumo do Pedido</h3>
+                
+                    <div id="resumoPedido" class="row g-3 mb-4">
+                      <!-- Produto 1 -->
+                      <div class="col-12 col-md-6 produto" data-preco="52.00">
+                        <div class="card p-3 shadow-sm">
+                          <h5 class="mb-1">Shampoo Aloe Vera</h5>
+                          <div class="d-flex align-items-center mb-2">
+                            <span class="me-2">Quantidade:</span>
+                            <button class="btn btn-outline-secondary btn-sm btn-minus">
+                              <i class="bi bi-dash-lg"></i>
+                            </button>
+                            <span class="quantidade mx-2">2</span>
+                            <button class="btn btn-outline-secondary btn-sm btn-plus">
+                              <i class="bi bi-plus-lg"></i>
+                            </button>
+                          </div>
+                          <p class="mb-1 fw-bold subtotal">Subtotal: R$ 104,00</p>
+                          <button class="btn btn-outline-danger btn-sm btn-delete">
+                            <i class="bi bi-trash"></i> Remover
+                          </button>
+                        </div>
+                      </div>
+                
+                      <!-- Produto 2 -->
+                      <div class="col-12 col-md-6 produto" data-preco="49.90">
+                        <div class="card p-3 shadow-sm">
+                          <h5 class="mb-1">Condicionador Camomila</h5>
+                          <div class="d-flex align-items-center mb-2">
+                            <span class="me-2">Quantidade:</span>
+                            <button class="btn btn-outline-secondary btn-sm btn-minus">
+                              <i class="bi bi-dash-lg"></i>
+                            </button>
+                            <span class="quantidade mx-2">1</span>
+                            <button class="btn btn-outline-secondary btn-sm btn-plus">
+                              <i class="bi bi-plus-lg"></i>
+                            </button>
+                          </div>
+                          <p class="mb-1 fw-bold subtotal">Subtotal: R$ 49,90</p>
+                          <button class="btn btn-outline-danger btn-sm btn-delete">
+                            <i class="bi bi-trash"></i> Remover
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- Total Geral -->
+                    <div class="text-end">
+                      <h4>Total Geral: <span id="totalGeral" class="text-success">R$ 153,90</span></h4>
+                      <button class="btn btn-warning mt-3">Finalizar Compra</button>
+                    </div>
+                  </div>
+
+        </div>
+    </main>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/js.js"></script>
+    <script src="js/CARRINHO.js"></script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,459 @@
+/* Estiliza os links da navbar */
+
+.nav-item .nav-link {
+  color: #D4AF37 !important;              /* Cor dourada do texto */
+  border: 1px solid #D4AF37 !important;   /* Borda dourada */
+  border-radius: 30px 0px;                     /* Cantos arredondados */
+  padding: 1em 1em;                      /* Espaço interno (padding) ao redor do texto */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave ao mudar cor de fundo e texto */
+  margin-right: 0.5em;                    /* Espaço à direita entre os itens */
+}
+
+/* Efeito ao passar o mouse nos links da navbar */
+.nav-item .nav-link:hover {
+  background-color: #D4AF37 !important;  /* Cor de fundo dourada ao passar o mouse */
+  color: #000000 !important;             /* Texto preto ao passar o mouse */
+  font-weight: bold;                     /* Texto em negrito */
+  margin-right: 0.5em;                   /* Mantém espaço à direita */
+  border: 1px solid #ffffff !important;  /* Borda branca ao passar o mouse */
+}
+
+/* Classe para fundo escuro */
+.fundo-primario {
+  background-color: #2F2F2F;             /* Cor de fundo cinza escuro */
+}
+
+/* Estiliza seções com IDs específicos */
+#id-contato, #id-produto, #id_sobre, #inicio {
+  background-color: #D4AF37 !important;  /* Fundo dourado */
+  color: #000000 !important;             /* Texto preto */
+  font-weight: bold;                     /* Negrito */
+  margin-right: 0.5em;                   /* Espaço à direita */
+  border: 1px solid #ffffff !important;  /* Borda branca */
+}
+
+/* Cor de fundo secundária (preta) */
+.second-color {
+  background-color: black;               /* Fundo preto */
+}
+
+/* Estilização da legenda do carrossel */
+.carousel-caption {
+  position: absolute;                    /* Posição absoluta */
+  bottom: 0;                             /* Alinha no fundo */
+  top: auto;                             /* Desabilita topo */
+  left: 0;                               /* Alinha à esquerda */
+  right: 0;                              /* Alinha à direita */
+  padding: 0rem 2rem;                    /* Espaço interno lateral */
+  background: linear-gradient(to top, rgba(0,0,0,0.95), transparent); /* Fundo com gradiente escuro */
+  color: white;                          /* Texto branco */
+  display: flex;                         /* Flexbox para alinhamento */
+  flex-direction: column;               /* Direção em coluna */
+  justify-content: center;              /* Centraliza verticalmente */
+  align-items: center;                  /* Centraliza horizontalmente */
+  height: 150px;                         /* Altura fixa */
+  border-radius: 0;                      /* Sem cantos arredondados */
+}
+
+/* Estilização geral do corpo da página */
+body {
+  font-family: Arial, sans-serif;        /* Fonte padrão */
+  background: #fff;                      /* Fundo branco */
+}
+
+/* Container principal do swiper (carrossel) */
+.swiper {
+  width: 100%;                           /* Largura total */
+  max-width: 1000px;                     /* Largura máxima */
+  margin: auto;                          /* Centraliza */
+  background: #f8f8f8;                   /* Fundo claro */
+  border-radius: 8px;                    /* Cantos arredondados */
+  padding: 20px;                         /* Espaçamento interno */
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1); /* Sombra leve */
+}
+
+/* Estilização de cada slide */
+.swiper-slide {
+  background: #fff;                      /* Fundo branco */
+  border-radius: 8px;                    /* Cantos arredondados */
+  box-shadow: 0 1px 6px rgb(0 0 0 / 0.1); /* Sombra leve */
+  padding: 15px;                         /* Espaço interno */
+  display: flex;                         /* Flexbox */
+  flex-direction: column;               /* Coluna */
+  align-items: center;                  /* Alinha ao centro */
+  text-align: center;                   /* Texto centralizado */
+  font-size: 14px;                       /* Tamanho da fonte */
+}
+
+/* Estilização das imagens no slide */
+.swiper-slide img {
+  width: 120px;                          /* Largura da imagem */
+  height: auto;                          /* Altura automática */
+  margin-bottom: 10px;                   /* Espaço abaixo */
+  object-fit: contain;                   /* Mantém proporção */
+}
+
+/* Nome do produto */
+.product-name {
+  font-weight: 600;                      /* Seminegrito */
+  margin-bottom: 5px;                    /* Espaço inferior */
+  height: 40px;                          /* Altura fixa */
+  overflow: hidden;                      /* Oculta excesso de texto */
+}
+
+/* Preço do produto */
+.price {
+  font-weight: bold;                     /* Negrito */
+  font-size: 16px;                       /* Tamanho da fonte */
+  margin-bottom: 6px;                    /* Espaço inferior */
+  color: #333;                           /* Cor escura */
+}
+
+/* Texto de desconto */
+.discount {
+  color: green;                          /* Verde */
+  font-weight: 600;                      /* Seminegrito */
+  margin-bottom: 10px;                   /* Espaço inferior */
+}
+
+/* Texto de frete grátis */
+.free-shipping {
+  color: green;                          /* Verde */
+  font-weight: 600;                      /* Seminegrito */
+  font-size: 12px;                       /* Tamanho menor */
+}
+
+/* Botões de navegação do swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #D4AF37;                        /* Cor dourada */
+  width: 35px;                           /* Largura do botão */
+  height: 35px;                          /* Altura do botão */
+  background: rgba(0, 0, 0, 0.15);       /* Fundo levemente escuro */
+  border-radius: 50%;                    /* Forma circular */
+}
+
+/* Efeito hover nos botões do swiper */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.4);        /* Fundo mais escuro ao passar o mouse */
+}
+
+/* Pontinhos indicadores do swiper */
+.swiper-pagination-bullet {
+  background: #262323;                      /* Cinza claro */
+  opacity: 1;                            /* Totalmente visível */
+}
+
+/* Indicador ativo */
+.swiper-pagination-bullet-active {
+  background: #D4AF37;                   /* Dourado */
+}
+
+/* Container da barra de busca */
+search-container {
+  display: flex;                         /* Flexbox */
+  width: 100%;                           /* Largura total */
+  max-width: 6em;                      /* Largura máxima */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  border-radius: 4px;                    /* Cantos arredondados */
+  background-color: #878585;   
+   font-family: 'Domine', serif;           
+}
+
+/* Botão de busca */
+.search-button {
+  /* Filtro de cor */
+  margin-left: 1em;
+  padding: 1em 1em;                   /* Espaçamento interno */
+  border-radius: 20px 0px 20px 0px;            
+  background-color: #D4AF37 !important;  /* Fundo amarelo/dourado */
+  color: #000000 !important;             /* Texto preto */
+}
+.search-button:hover {
+  background-color: #b98f0d; /* tom mais escuro para destacar */
+  box-shadow: 0 0 10px #D4AF37; /* brilho dourado ao redor */
+  transform: scale(1.05); /* aumenta um pouco o tamanho */
+  color: #000000;
+  margin-left: 1em; /* mantém o espaçamento */
+}
+
+/* Estilização da navbar */
+.navbar {
+  display: flex;                         /* Flexbox */
+  align-items: center;                   /* Alinha itens verticalmente */
+  justify-content: center;       /* Espaço entre as partes */
+  padding: 0 1em;                       /* Espaçamento lateral */
+  background-color: #f2f2f2;             /* Cor de fundo cinza claro */
+}
+
+/* Divide a navbar em seções */
+.navbar-section {
+  flex: 1;                               /* Cada parte ocupa 1 fração */
+  display: flex;                         /* Flexbox */
+  align-items: center;                   /* Alinha itens verticalmente */
+}
+
+/* Alinha seção à esquerda */
+.navbar-section.left {
+  justify-content: flex-start;          /* Alinhamento à esquerda */
+}
+
+/* Centraliza seção */
+.navbar-section.center {
+  justify-content: center;              /* Centralizado */
+}
+
+/* Alinha seção à direita */
+.navbar-section.right {
+  justify-content: flex-end;            /* Alinhamento à direita */
+}
+
+/* Estilização da barra de pesquisa */
+.search-container {
+  display: flex;                         /* Flexbox */
+  width: 100%;                           /* Largura total */
+  max-width: 60em;                      /* Largura máxima */
+  background-color: rgb(6, 6, 6);              /* Fundo branco */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Campo de entrada da busca */
+.search-input {
+  flex: 1;                               /* Ocupa o espaço disponível */
+  padding: 10px 12px;                    /* Espaçamento interno */
+  font-size: 16px;                       /* Tamanho da fonte */
+  border: none;                          /* Sem borda */
+  border-radius: 30px 0 30px 0px;            /* Cantos arredondados à esquerda*/
+  background-color: #a7a6a6;
+  outline: none;                       /* Remove contorno ao focar */
+}
+
+/* Botão de menu hamburger (mobile) */
+.navbar-toggler {
+  background: none;                     /* Sem fundo */
+  border: none;                         /* Sem borda */
+  cursor: pointer;                      /* Cursor em forma de mãozinha */
+}
+
+/* Para telas menores que 768px */
+/* Navbar muda para coluna no mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-section {
+    justify-content: center !important;
+    margin: 0.5em 0;
+  }
+
+  /* Ajustar a barra de pesquisa para ficar maior */
+  .search-container {
+    background-color: black;
+    max-width: 100%;
+  }
+}
+
+/* Botão do carrinho estilizado para combinar com a navbar */
+.cart-button {
+  position: relative;
+  display: inline-flex;          /* Flex para alinhar ícone e badge */
+  align-items: center;
+  gap: 6px;
+  background-color: transparent;
+  border: 1px solid #D4AF37;    /* borda dourada */
+  color: #D4AF37;                /* texto dourado */
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  text-decoration: none;         /* remove sublinhado do link */
+  user-select: none;
+}
+
+/* Hover com fundo dourado e texto preto */
+.cart-button:hover {
+  background-color: #D4AF37;
+  color: #000000;
+  border-color: #ffffff; /* borda branca no hover */
+}
+
+/* Ícone do carrinho (imagem) */
+.cart-icon {
+  width: 24px;     /* tamanho fixo do ícone */
+  height: 24px;
+  display: block;
+}
+
+/* Badge da quantidade, círculo vermelho com texto branco */
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 2px 7px;
+  border-radius: 50%;
+  min-width: 20px;
+  height: 20px;
+  line-height: 16px;
+  text-align: center;
+  pointer-events: none;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.cart-icon.hover-icon {
+  display: none;    /* imagem hover escondida por padrão */
+}
+
+.cart-button:hover .default-icon {
+  display: none;    /* esconde a imagem normal no hover */
+}
+
+.cart-button:hover .hover-icon {
+  display: block;   /* mostra a imagem hover no hover */
+}
+
+.cart-button-shover{
+  position: relative;
+  display: inline-flex;          /* Flex para alinhar ícone e badge */
+  align-items: center;
+  gap: 6px;
+  background-color: transparent;
+  border: 1px solid #D4AF37;    /* borda dourada */
+  color: #D4AF37;                /* texto dourado */
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  text-decoration: none;         /* remove sublinhado do link */
+  user-select: none;
+}
+
+/* Fonte luxo para toda a página */
+body {
+  font-family: 'Domine', serif;
+  background: #2F2F2F;
+  margin: 0;
+  color: #fdfdfd; /* texto padrão escuro para boa leitura */
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #D4AF37; /* dourado */
+  margin-bottom: 0.5em;
+  letter-spacing: 0.05em; /* toque elegante */
+}
+
+/* Parágrafos */
+p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ede7e7;
+  margin-bottom: 1em;
+}
+
+
+/* Estiliza a barra de rolagem - Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Fundo da barra (trilho) — preto */
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 10px;
+}
+
+/* Parte que se move (polegar) — dourado */
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 10px;
+}
+
+/* Hover no polegar — dourado mais escuro */
+::-webkit-scrollbar-thumb:hover {
+  background: #b28e2f;
+}
+
+/* Firefox */
+html {
+  scrollbar-color: #D4AF37 #000000; /* polegar dourado, fundo preto */
+  scrollbar-width: thin;
+}
+
+/* Painel Offcanvas */
+.offcanvas {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 320px; /* Ajuste a largura conforme necessário */
+}
+
+.offcanvas-header {
+  background-color: #D4AF37; /* tom dourado */
+  color: #fff;
+  padding: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.offcanvas-body {
+  background-color: #fff;
+  padding: 1rem;
+  font-family: 'Domine', serif;
+}
+
+/* Seções de filtro */
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
+.filter-section h6 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Grupo para faixa de preço */
+.filter-range-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-range-group input {
+  width: 48%;
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Botão de Filtros na página principal */
+.btn-outline-secondary {
+  border-color: #D4AF37;
+  color: #D4AF37;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #D4AF37;
+  color: #fff;
+}
+
+/* Estilo para checkboxes quando selecionados */
+.form-check-input:checked {
+  background-color: #D4AF37;
+  border-color: #D4AF37;
+}
+

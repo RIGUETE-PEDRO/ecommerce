@@ -1,0 +1,94 @@
+/* Fonte luxo para toda a página */
+body {
+  font-family: 'Domine', serif;
+  background: #2F2F2F;
+  margin: 0;
+  color: #fdfdfd; /* texto padrão escuro para boa leitura */
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #D4AF37; /* dourado */
+  margin-bottom: 0.5em;
+  letter-spacing: 0.05em; /* toque elegante */
+}
+
+/* Parágrafos */
+p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ede7e7;
+  margin-bottom: 1em;
+}
+
+/* Botões estilo luxo */
+.btn-luxo {
+  font-family: 'Playfair Display', serif;
+  background-color: transparent;
+  border: 2px solid #D4AF37;
+  color: #D4AF37;
+  padding: 0.5em 1.5em;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-luxo:hover {
+  background-color: #D4AF37;
+  color: #000;
+  font-weight: 700;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(1em);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(1em);
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Domine', serif;
+    color: #ffffff;
+    background-color: black;
+    border: #D4AF37 2px solid;
+    border-radius: 12px;
+    box-shadow: 0 0em 10em rgba(0, 0, 0, 1.7);
+    
+  }
+
+.principal {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  /* definir uma altura mínima para o container permitir sticky funcionar */
+  min-height: 600px;
+}
+
+.texto {
+  flex: 1 1 600px;
+}
+
+.logo {
+  flex: 0 0 250px;
+  position: sticky;
+  top: 20px; /* distância do topo da viewport */
+  align-self: flex-start;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+

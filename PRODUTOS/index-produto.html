@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos | EcoBelle</title>
+  <link rel="icon" href="../img/iconsite.png" type="image/png">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Cabeçalho / Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #000000; border-bottom: 1px solid #D4AF37;">
+      <div class="container-fluid">
+        <img src="../img/image-removebg-preview (2).png" alt="Logo" width="100em">
+        <a class="navbar-brand" href="#" style="color: #D4AF37; font-weight: bold;">EcoBelle</a>
+        <div class="search-container">
+          <input type="text" placeholder="Buscar produtos, marcas e muito mais..." class="search-input">
+          <button class="search-button">&#128269;</button>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="filter: invert(75%) sepia(90%) saturate(500%) hue-rotate(15deg);"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">INICIO</a></li>
+            <li class="nav-item"><a id="id-produto" class="nav-link active" href="#">PRODUTOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="../SOBRE/index-sobre.html">SOBRE</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../CONTATOS/index_contatos.html">CONTATO</a></li>
+            <a class="cart-button" aria-label="Carrinho de compras" href="../CARINHO/index-carrinho.html">
+              <img src="../img/shopping-cart.png" alt="Carrinho de compras" class="cart-icon default-icon">
+              <img src="../img/shopping-cart_preto.png" alt="Carrinho de compras hover" class="cart-icon hover-icon">
+              <span class="cart-badge">0</span>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Conteúdo Principal: Grid de Produtos -->
+  <main class="container py-5">
+    <h1 class="mb-4" style="color: #D4AF37;">Produtos</h1>
+    <div class="row">
+      
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/f1.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="add-to-cart">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repita o mesmo padrão para os demais produtos -->
+       <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/f2.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/f3.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/f4.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/f5.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/f6.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/f7.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/shopping-cart_preto.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/shopping-cart_preto.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/shopping-cart_preto.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/shopping-cart_preto.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/shopping-cart_preto.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/shopping-cart_preto.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/shopping-cart_preto.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/shopping-cart_preto.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exemplo de Produto 1 -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card product-card">
+          <div class="img-container">
+            <img src="../img/shopping-cart_preto.png" class="card-img-top product-img" alt="Produto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">R$ 199,99</p>
+            <div class="d-flex justify-content-between mt-2">
+              <a href="produto.html" class="btn btn-primary btn-sm">Ver Detalhes</a>
+              <a href="#" class="btn btn-success btn-sm btn-comprar">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+  </main>
+  
+  <!-- Toast de Notificação: Aparece ao clicar no botão "Comprar" -->
+  <div aria-live="polite" aria-atomic="true" class="position-fixed bottom-0 end-0 p-3" style="z-index: 11;">
+    <div id="liveToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Produto adicionado ao carrinho!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Fechar"></button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container text-center">
+    
+      &copy; 2025 Folha Bela. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+  <!-- Scripts do Bootstrap -->
+  <script src="../js/bootstrap.bundle.js"></script>
+  <script src="js/PRODUTOS.js"></script>
+</body>
+</html>

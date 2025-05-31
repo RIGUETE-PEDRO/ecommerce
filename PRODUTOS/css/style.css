@@ -1,0 +1,35 @@
+.add-to-cart span{
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--text-color);
+    opacity: var(--text-color-o);
+    transform: translate(var(--text-x)) translateZ(0);
+}
+
+.add-to-cart .shit,.add-to-cart .cart{
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+
+}
+
+.add-to-cart:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    transition: background 0.25s;
+    background: var(--background,var(--background-default));
+    transform: scaleX(var(--background-scale))
+    translateZ(0);
+}
+
