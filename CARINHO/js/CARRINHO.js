@@ -69,5 +69,3 @@ const paymentRadios = document.querySelectorAll('input[name="paymentMethod"]');
 
   // Atualiza os totais ao carregar
   atualizarTotais();
-
-  

@@ -28,7 +28,7 @@
 
 /* Personalização dos títulos e preços */
 .card-title {
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
   font-weight: bold;
   color: #333;
 }
@@ -40,8 +40,8 @@
 
 /* Botões de ação */
 .btn-primary {
-  background-color: #D4AF37;
-  border-color: #D4AF37;
+  background-color: #d4af37;
+  border-color: #d4af37;
   transition: background-color 0.3s ease;
   color: #000;
 }
@@ -53,56 +53,133 @@
 }
 
 /* Botão de comprar (btn-success) já utiliza o estilo padrão do Bootstrap, mas você pode ajustar se necessário */
-input{
-  
-  
+input {
 }
 
-.fundo{
-                  /* opacidade do fundo */
-  background-image: url('../../img/contatofundo.jpg');              /* opacidade do fundo */
-  background-size: cover;        /* cobre toda a área */
-  background-position: center;   /* centraliza a imagem */
-  background-repeat: no-repeat;  /* evita repetição */
-  padding: 7em 2em;            /* espaço interno */
-  border-radius: 16px;           /* cantos arredondados */
-  color: #000;                   /* texto em preto (pode ajustar) */
+.fundo {
+  /* opacidade do fundo */
+  background-image: url("../../img/contatofundo.jpg"); /* opacidade do fundo */
+  background-size: cover; /* cobre toda a área */
+  background-position: center; /* centraliza a imagem */
+  background-repeat: no-repeat; /* evita repetição */
+  padding: 7em 2em; /* espaço interno */
+  border-radius: 16px; /* cantos arredondados */
+  color: #000;
+  height: 100vh; /* Para garantir que o corpo ocupe toda a altura da tela */
+  margin: 0;
+  /* texto em preto (pode ajustar) */
 }
 
-.fundo .form{
-   max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    font-family: 'Domine', serif;
-    color: #ffffff;
-    background-color: black;
-    border: #D4AF37 2px solid;
-    border-radius: 12px;
-    box-shadow: 0 0em 10em rgba(0, 0, 0, 1.7);
-
+.fundo .form {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: "Domine", serif;
+  color: #ffffff;
+  background-color: black;
+  border: #d4af37 2px solid;
+  border-radius: 12px;
+  box-shadow: 0 0em 10em rgba(0, 0, 0, 1.7);
 }
 
-.form-label, .mb-4{
-  color: #D4AF37 ;
+.form-label,
+.mb-4 {
+  color: #d4af37;
 }
 
-.form-control{
+.form-control {
   background-color: #000;
-  color: #D4AF37;
-  
+  color: #d4af37;
 }
 
-
-.form-control::placeholder{
+.form-control::placeholder {
   background-color: #000;
   color: #95948f;
-  
 }
 
-.form-control:focus{
-  border-color: #D4AF37;
+.form-control:focus {
+  border-color: #d4af37;
   box-shadow: 0 0 0.25rem rgba(212, 175, 55, 0.25);
   background-color: #000;
-  color: #D4AF37;
+  color: #d4af37;
 }
 
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  min-width: 300px;
+  min-height: 60px;
+  display: inline-flex;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #11fa09;
+background: linear-gradient(90deg, rgb(241, 255, 84) 0%, rgb(192, 152, 51) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(206, 103, 6, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #d78a0e;
+  box-shadow: 0 0 60px rgba(238, 246, 2, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, 
+.button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.button:hover::before, 
+.button:focus::before {
+  opacity: 1;
+}
+
+
+.button:hover::after, 
+.button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
