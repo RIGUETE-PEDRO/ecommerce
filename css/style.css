@@ -409,8 +409,6 @@ html {
   padding-top: 0.5em;
 }
 
-
-
 /* Estilização do conteúdo do filtro */
 
 /* Estilização do conteúdo do filtro */
@@ -512,7 +510,7 @@ html {
   color: white;
 }
 
-.text-animation{
+.text-animation {
   font-family: "Domine", serif;
   font-size: 2.5rem;
   color: #d4af37; /* Cor dourada */
@@ -531,4 +529,38 @@ html {
   flex-wrap: wrap; /* Garante que eles quebrem linha se necessário */
   gap: 2rem; /* Espaçamento entre os produtos */
   padding: 2rem 0;
+}
+
+.feedback-card {
+  background-color: #362c2c;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #060606;
+  margin-bottom: 1rem;
+}
+
+.carousel-inner {
+  padding: 2rem 0;
+}
+
+.feedback-author {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+.feedback-role {
+  font-size: 0.9rem;
+  color: #efefef;
 }
