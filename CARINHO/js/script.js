@@ -1,197 +1,145 @@
-const cardBox = document.querySelector('div.card-content-box')
-const btnRotateCard = document.querySelector('#rotate-card')
-const btnSubmit = document.querySelector('#input-submit')
+// Seleciona elementos do DOM
+function toggleCamposCartao(value) {
+  const cartaoContainer = document.getElementById('cartao-container');
+  if (value === 'cartao' || value === 'debito') {
+    cartaoContainer.style.display = 'block';
+  } else {
+    cartaoContainer.style.display = 'none';
+  }
+}
 
+const cardBox = document.querySelector('.card-content'); // container que será rotacionado
+const btnSubmit = document.querySelector('#input-submit');
 
-const inputNumber = document.querySelector('#input-number')
-const inputNumberInfo = document.querySelector('#input-number + .info')
-const inputName = document.querySelector('#input-name')
-const inputNameInfo = document.querySelector('#input-name + .info')
-const inputCvv = document.querySelector('#input-cvv')
-const inputCvvInfo = document.querySelector('#input-cvv + .info')
-const inputValidate = document.querySelector('#input-validate')
-const inputValidateInfo = document.querySelector('#input-validate + .info')
+const inputNumber = document.querySelector('#input-number');
+const inputName = document.querySelector('#input-name');
+const inputValidate = document.querySelector('#input-validate');
+const inputCvv = document.querySelector('#input-cvv');
 
-const cardViewName = document.querySelector('#card-user-name');
 const cardViewNumber = document.querySelector('#card-user-number');
-const cardViewCvv = document.querySelector('#card-user-cvv');
+const cardViewName = document.querySelector('#card-user-name');
 const cardViewDate = document.querySelector('#card-user-date');
+const cardViewCvv = document.querySelector('.card-back .cvv'); // Verso do cartão
 
-
-inputNumber.onblur = (e) => {
-	const value = e.target.value;
-	const valueReplace = value.replaceAll(' ', '')
-
-
-	if(value.length <= 0){
-		const message = "Preenchimento obrigatório!"
-		inputNumberInfo.querySelector('.message').innerText = message
-		inputNumberInfo.classList.add('visible')
-		btnSubmit.classList.add('disable')
-		return false;
-	}
-
-	if(!/^[0-9]{16}$/.test(valueReplace)){
-		const message = "Use apenas números, e verifique se estão completos!"
-		inputNumberInfo.querySelector('.message').innerText = message
-		inputNumberInfo.classList.add('visible')
-		btnSubmit.classList.add('disable')
-		return false;
-	}
-
-	inputNumberInfo.querySelector('.message').innerText = ''
-	inputNumberInfo.classList.remove('visible')
-
-	canSubmit();
+// Formata número do cartão com espaços
+function formatCardNumber(value) {
+  return value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim();
 }
 
-inputName.onblur = (e) => {
-	const value = e.target.value;
-	const valueReplace = value.replaceAll(' ', '')
-
-
-	if(value.length <= 0){
-		const message = "Preenchimento obrigatório!"
-		inputNameInfo.querySelector('.message').innerText = message
-		inputNameInfo.classList.add('visible')
-		btnSubmit.classList.add('disable')
-		return false;
-	}
-
-	if(!/^[a-z]+$/i.test(valueReplace)){
-		const message = "Insira seu nome de forma correcta!"
-		inputNameInfo.querySelector('.message').innerText = message
-		inputNameInfo.classList.add('visible')
-		btnSubmit.classList.add('disable')
-		return false;
-	}
-
-	inputNameInfo.querySelector('.message').innerText = ''
-	inputNameInfo.classList.remove('visible')
-	canSubmit();
+function handleNumber(e) {
+  let value = e.target.value;
+  value = formatCardNumber(value);
+  e.target.value = value;
+  cardViewNumber.textContent = value || '•••• •••• •••• ••••';
 }
 
-inputValidate.onblur = (e) => {
-	const value = e.target.value;
-	const valueReplace = value.replaceAll(' ', '')
-
-
-	if(value.length <= 0){
-		const message = "Preenchimento obrigatório!"
-		inputValidateInfo.querySelector('.message').innerText = message
-		inputValidateInfo.classList.add('visible')
-		btnSubmit.classList.add('disable')
-		return false;
-	}
-
-	if(!/^[0-9]{2}\/[0-9]{4}/i.test(valueReplace)){
-		const message = `Use o padrão "mês/ano"`
-		inputValidateInfo.querySelector('.message').innerText = message
-		inputValidateInfo.classList.add('visible')
-		btnSubmit.classList.add('disable')
-		return false;
-	}
-
-	inputValidateInfo.querySelector('.message').innerText = ''
-	inputValidateInfo.classList.remove('visible')
-	canSubmit();
+function handleName(e) {
+  let value = e.target.value.toUpperCase();
+  cardViewName.textContent = value || '(Seu nome)';
 }
 
-btnRotateCard.addEventListener('click', (e) => {
-	cardBox.classList.toggle('rotate')
-})
-
-const handleName = (e) => {
-
-	setTimeout(() => {
-
-		const value = e.target.value
-
-		cardViewName.innerText= value
-
-	}, 100)
-	
+function handleValidate(e) {
+  let value = e.target.value;
+  value = value.replace(/[^\d\/]/g, '');
+  if (value.length === 2 && !value.includes('/')) {
+    value += '/';
+  }
+  e.target.value = value;
+  cardViewDate.textContent = value || '••/••';
 }
 
-const handleNumber = (e) => {
-
-	setTimeout(() => {
-
-		const value = e.target.value
-
-
-		if(value.length >= 20) {
-			return false;
-		}
-
-		if(e.key == 'Backspace') {
-			cardViewNumber.innerText = value
-			return false
-		}
-
-		if(value.length == 4 || value.length == 9 || value.length == 14) {
-
-			e.target.value += " "
-		}
-
-		cardViewNumber.innerText = value
-
-	}, 0)
-	
+function handleCvv(e) {
+  let value = e.target.value.replace(/\D/g, '').slice(0, 3);
+  e.target.value = value;
+  cardViewCvv.textContent = value || '•••';
 }
 
-const handleCvv = (e) => {
+// Rotaciona cartão ao focar/desfocar no CVV
+inputCvv.addEventListener('focus', () => {
+  cardBox.classList.add('rotate');
+});
 
-	setTimeout(() => {
+inputCvv.addEventListener('blur', () => {
+  cardBox.classList.remove('rotate');
+});
 
-		const value = e.target.value
+// Validação simples para habilitar botão
+function canSubmit() {
+  const isValidNumber = inputNumber.value.replace(/\s/g, '').length === 16;
+  const isValidName = inputName.value.trim().length > 0;
+  const isValidDate = /^(\d{2})\/(\d{2,4})$/.test(inputValidate.value);
+  const isValidCvv = inputCvv.value.length === 3;
 
-
-		cardViewCvv.innerText = value
-
-	}, 0)
-	
+  btnSubmit.disabled = !(isValidNumber && isValidName && isValidDate && isValidCvv);
 }
 
-const handleValidate = (e) => {
+// Atualiza visual e valida botão ao digitar
+inputNumber.addEventListener('input', e => {
+  handleNumber(e);
+  canSubmit();
+});
+inputName.addEventListener('input', e => {
+  handleName(e);
+  canSubmit();
+});
+inputValidate.addEventListener('input', e => {
+  handleValidate(e);
+  canSubmit();
+});
+inputCvv.addEventListener('input', e => {
+  handleCvv(e);
+  canSubmit();
+});
 
-	setTimeout(() => {
+// Inicializa botão
+canSubmit();
 
-		const value = e.target.value
 
+    const produtos = [
+        { id: 1, nome: 'Creme Facial Rosa Mosqueta', preco: 149.90, qtd: 1, imagem: '../../img/imgProd/especial1.png' },
+        { id: 2, nome: 'Sérum Iluminador Raízes', preco: 89.90, qtd: 2, imagem: '../../img/imgProd/especial2.png' }
+    ];
 
-		cardViewDate.innerText = value
+    function renderCarrinho() {
+        const carrinho = document.getElementById('carrinho');
+        const totalGeral = document.getElementById('total-geral');
+        carrinho.innerHTML = '';
+        let total = 0;
 
-	}, 0)
-	
-}
+        produtos.forEach((p, index) => {
+            const subtotal = p.qtd * p.preco;
+            total += subtotal;
 
-inputCvv.onfocus = () => {
-	cardBox.classList.remove('rotate')
-}
+            carrinho.innerHTML += `
+                <div class="item-carrinho">
+                    <img src="${p.imagem}" alt="${p.nome}">
+                    <div class="info-produto">
+                        <div class="nome-produto">${p.nome}</div>
+                        <div class="controles">
+                            <button onclick="alterarQtd(${index}, -1)">−</button>
+                            <span>${p.qtd}</span>
+                            <button onclick="alterarQtd(${index}, 1)">+</button>
+                        </div>
+                    </div>
+                    <div class="preco">R$ ${subtotal.toFixed(2)}</div>
+                    <button class="remover" onclick="removerProduto(${index})">X</button>
+                </div>
+            `;
+        });
 
-inputCvv.onblur = () => {
-	cardBox.classList.add('rotate')
-	canSubmit();
-}
+        totalGeral.innerText = total.toFixed(2);
+    }
 
-function canSubmit(){
-	
-	const inputs = document.querySelectorAll('input')
+    function alterarQtd(index, delta) {
+        produtos[index].qtd += delta;
+        if (produtos[index].qtd < 1) produtos[index].qtd = 1;
+        renderCarrinho();
+    }
 
-	for(let i = 0; i < inputs.length; i++){
+    function removerProduto(index) {
+        produtos.splice(index, 1);
+        renderCarrinho();
+    }
 
-		if(inputs[i].value.length <= 0){
-			btnSubmit.classList.add('disable')
-			return false;
-		}
-	}
+    window.onload = renderCarrinho;
 
-	btnSubmit.classList.remove('disable')
-}
-
-canSubmit()
-
-  document.getElementById('rotate-card').addEventListener('click', function () {
-    document.getElementById('card').classList.toggle('flipped');
-  });

@@ -118,203 +118,130 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Pagamento -->
-                    <h5 class="mt-4" style="color: #D4AF37;">Pagamento</h5>
+                </form>
+                <!-- Pagamento -->
+                <h5 class="mt-4" style="color: #D4AF37;">Pagamento</h5>
+                <form>
                     <div class="mb-3">
                         <label class="form-label">Forma de Pagamento</label>
                         <select class="form-select" id="formaPagamento" required
                             onchange="toggleCamposCartao(this.value)">
                             <option value="">Selecione</option>
                             <option value="cartao">Cartão de Crédito</option>
-                            <option value="cartao">Cartão de debito</option>
+                            <option value="debito">Cartão de Débito</option>
                             <option value="pix">PIX</option>
                             <option value="boleto">Boleto Bancário</option>
                         </select>
                     </div>
 
+                    <!-- Campos do Cartão -->
+                    <div id="cartao-container" class="wrapper" style="display: none;">
+                        <!-- todo o conteúdo do cartão aqui dentro -->
 
-                    <div class="wrapper">
-
-                        <form action="" class="form-container">
+                        <div class="form-container">
                             <div class="box-form">
                                 <div class="input-content">
+
+                                    <!-- Número do Cartão -->
                                     <div class="box-input">
                                         <label>Número do cartão</label>
                                         <input autocomplete="off" id="input-number" type="text" maxlength="19"
                                             placeholder="Número do cartão" style="word-spacing: 8px;"
                                             onkeydown="handleNumber(event)">
-                                        <div class="info">
-                                            <span class="icon">
-                                                <img src="./assets/warning.svg" />
-                                            </span>
-
-                                            <span class="message"></span>
-                                        </div>
+                                        <div class="info"><span class="message"></span></div>
                                     </div>
 
+                                    <!-- Nome do Titular -->
                                     <div class="box-input">
                                         <label>Nome do titular</label>
                                         <input autocomplete="off" id="input-name" type="text"
                                             placeholder="Nome como está no cartão" onkeydown="handleName(event)">
-                                        <div class="info">
-                                            <span class="icon">
-                                                <img src="./assets/warning.svg" />
-                                            </span>
-
-                                            <span class="message"></span>
-                                        </div>
+                                        <div class="info"><span class="message"></span></div>
                                     </div>
 
+                                    <!-- Validade e CVV -->
                                     <div class="box-input-more">
                                         <div class="box-one">
                                             <label>Validade</label>
                                             <input autocomplete="off" id="input-validate" maxlength="7" type="text"
                                                 placeholder="mm/aa" onkeydown="handleValidate(event)">
-                                            <div class="info">
-                                                <span class="icon">
-                                                    <img src="./assets/warning.svg" />
-                                                </span>
-
-                                                <span class="message"></span>
-                                            </div>
+                                            <div class="info"><span class="message"></span></div>
                                         </div>
 
                                         <div class="box-two">
-                                            <label>
-                                                CVV
-                                                <span class="icon" title="Ajuda">
-                                                    <img src="./assets/help.svg" />
-                                                </span>
-                                            </label>
+                                            <label>CVV</label>
                                             <input autocomplete="off" id="input-cvv" type="password" maxlength="3"
                                                 placeholder="cvv" onkeydown="handleCvv(event)">
-                                            <div class="info">
-                                                <span class="icon">
-                                                    <img src="./assets/warning.svg" / />
-                                                </span>
-
-                                                <span class="message"></span>
-                                            </div>
+                                            <div class="info"><span class="message"></span></div>
                                         </div>
-
                                     </div>
                                 </div>
 
+                                <!-- Visual do Cartão -->
                                 <div class="card-content animate__animated animate__backInUp">
-
-
                                     <div class="card-container">
-                                          <div class="card-inner" id="card">
-                                                <div class="card-front">
-
-                                                <div class="content ">
+                                        <div class="card-inner" id="card">
+                                            <!-- Frente -->
+                                            <div class="card-front">
+                                                <div class="content">
                                                     <div class="card-header">
                                                         <span class="icon"><img src="./assets/visa-logo.svg" /></span>
                                                         <span class="icon"><img
                                                                 src="./assets/contact-less-payment.svg" /></span>
                                                     </div>
-
                                                     <div class="card-body">
-                                                        <div id="card-user-number" class="number-card">•••• •••• ••••
-                                                            ••••
-                                                        </div>
-
+                                                        <div id="card-user-number" class="number-card">•••• ••••
+                                                            •••• ••••</div>
                                                         <div class="name-and-date">
                                                             <div id="card-user-name" class="name">(Seu nome)</div>
-                                                            <div id="card-user-date" class="date">• • / • • • •</div>
+                                                            <div id="card-user-date" class="date">••/••••</div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class=" box-card">
-                                                <div class="interior">
-                                                    
-                                                <div class="content card-2">
-                                                    <div class="bar"></div>
-                                                    <div class="cvv">
-                                                        <div id="card-user-cvv" class="cvv-number"></div>
-                                                        <div class="cvv-text">CVV</div>
+                                            <!-- Verso -->
+                                            <div class="card-back">
+                                                <div class="magnetic-strip"></div>
+                                                <div class="signature-cvv" style="display:flex; margin-top:20px;">
+                                                    <div class="signature-box">
+
+                                                    </div>
+                                                    <div class="cvv-box">
+                                                        <label>CVV</label>
+                                                        <div class="cvv">123</div>
                                                     </div>
                                                 </div>
+                                                <div class="security-text">
+                                                    Este cartão é propriedade do emissor. Use apenas para transações
+                                                    autorizadas.
                                                 </div>
+                                            </div>
+
                                         </div>
                                     </div>
-
-                                    <div id="rotate-card" class="rotate-card" title="Ver a outra parte do cartão">
-                                        <img src="./assets/rotate.svg" width="20px">
-                                    </div>
-
-                                    <div class="status-security">
-                                        <span class="icon"><img src="./assets/shield.svg" /></span>
-                                        <span>Seus dados estão seguros</span>
-                                    </div>
                                 </div>
-                            </div>
-
-                            <button id="input-submit" type="submit" class="button-submit">Adicionar cartão</button>
-                        </form>
-                    </div>
-
-                    <!-- Resumo do pedido -->
-                    <div class="container my-5">
-                        <h3 class="text-center text-warning mb-4">Resumo do Pedido</h3>
-
-                        <div id="resumoPedido" class="row g-3 mb-4">
-                            <!-- Produto 1 -->
-                            <div class="col-12 col-md-6 produto" data-preco="52.00">
-                                <div class="card p-3 shadow-sm">
-                                    <h5 class="mb-1">Shampoo Aloe Vera</h5>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <span class="me-2">Quantidade:</span>
-                                        <button class="btn btn-outline-secondary btn-sm btn-minus">
-                                            <i class="bi bi-dash-lg"></i>
-                                        </button>
-                                        <span class="quantidade mx-2">2</span>
-                                        <button class="btn btn-outline-secondary btn-sm btn-plus">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </button>
-                                    </div>
-                                    <p class="mb-1 fw-bold subtotal">Subtotal: R$ 104,00</p>
-                                    <button class="btn btn-outline-danger btn-sm btn-delete">
-                                        <i class="bi bi-trash"></i> Remover
-                                    </button>
-                                </div>
-                            </div>
-
-                            <!-- Produto 2 -->
-                            <div class="col-12 col-md-6 produto" data-preco="49.90">
-                                <div class="card p-3 shadow-sm">
-                                    <h5 class="mb-1">Condicionador Camomila</h5>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <span class="me-2">Quantidade:</span>
-                                        <button class="btn btn-outline-secondary btn-sm btn-minus">
-                                            <i class="bi bi-dash-lg"></i>
-                                        </button>
-                                        <span class="quantidade mx-2">1</span>
-                                        <button class="btn btn-outline-secondary btn-sm btn-plus">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </button>
-                                    </div>
-                                    <p class="mb-1 fw-bold subtotal">Subtotal: R$ 49,90</p>
-                                    <button class="btn btn-outline-danger btn-sm btn-delete">
-                                        <i class="bi bi-trash"></i> Remover
-                                    </button>
-                                </div>
+                                <!-- Botão -->
+                                <button id="input-submit" type="submit" class="button-submit">Adicionar
+                                    cartão</button>
                             </div>
                         </div>
-
-                        <!-- Total Geral -->
-                        <div class="text-end">
-                            <h4>Total Geral: <span id="totalGeral" class="text-success">R$ 153,90</span></h4>
-                            <div class="wrap">
-                                <button class="button">finalizara compra</a>
-                            </div>
-                        </div>
-                    </div>
+                </form>
 
             </div>
+        </div>
+        <div class="resumo-pedido">
+            <h5 class="mt-4" style="color: #D4AF37;">Resumo do Pedido</h5>
+            <div id="carrinho" class="mb-4">
+                <!-- Itens vão ser renderizados aqui -->
+            </div>
+            <div class="text-end fw-bold fs-5">
+                Total: R$ <span id="total-geral">0.00</span>
+            </div>
+            <div class="wrap">
+            <button class="button">finalizar pedido</a>
+          </div>
+
         </div>
     </main>
 

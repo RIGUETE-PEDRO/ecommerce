@@ -63,10 +63,7 @@
 }
 
 /* Estilização geral do corpo da página */
-body {
-  font-family: Arial, sans-serif; /* Fonte padrão */
-  background: #fff; /* Fundo branco */
-}
+
 
 search-container {
   display: flex; /* Flexbox */
@@ -111,40 +108,8 @@ search-container {
   align-items: center; /* Alinha itens verticalmente */
 }
 
-/* Alinha seção à esquerda */
-.navbar-section.left {
-  justify-content: flex-start; /* Alinhamento à esquerda */
-}
 
-/* Centraliza seção */
-.navbar-section.center {
-  justify-content: center; /* Centralizado */
-}
 
-/* Alinha seção à direita */
-.navbar-section.right {
-  justify-content: flex-end; /* Alinhamento à direita */
-}
-
-/* Estilização da barra de pesquisa */
-.search-container {
-  display: flex; /* Flexbox */
-  width: 100%; /* Largura total */
-  max-width: 60em; /* Largura máxima */
-  background-color: rgb(6, 6, 6); /* Fundo branco */
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-/* Campo de entrada da busca */
-.search-input {
-  flex: 1; /* Ocupa o espaço disponível */
-  padding: 10px 12px; /* Espaçamento interno */
-  font-size: 16px; /* Tamanho da fonte */
-  border: none; /* Sem borda */
-  border-radius: 30px 0 30px 0px; /* Cantos arredondados à esquerda*/
-  background-color: #a7a6a6;
-  outline: none; /* Remove contorno ao focar */
-}
 
 /* Botão de menu hamburger (mobile) */
 .navbar-toggler {
@@ -399,7 +364,6 @@ html {
   padding-left: 3rem;
   padding-right: 3em; /* Ajuste aqui o espaço conforme necessário */
   max-width: 300px;
-  background-color: #ffffff; /* cor de fundo suave */
   border: 1px solid #d4af37; /* linha dourada lateral (vertical) */
   min-height: 100vh; /* altura total da tela se necessário */
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -563,4 +527,59 @@ html {
 .feedback-role {
   font-size: 0.9rem;
   color: #efefef;
+}
+
+.card-content {
+  perspective: 1000px;
+  width: 320px; /* ajuste conforme necessário */
+  height: 190px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+/* Quando .rotate estiver em .card-content, gira o cartão */
+.card-content.rotate .card-container {
+  transform: rotateY(180deg);
+}
+
+/* Frente do cartão */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Frente */
+.card-front {
+  background: linear-gradient(135deg, #3a3a3a, #1c1c1c);
+  color: white;
+  z-index: 2;
+}
+
+/* Verso (virado) */
+.card-back {
+  background: linear-gradient(135deg, #2c2c2c, #121212);
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.resumo-pedido{
+  background-color: #000;
+  border: #d4af37 solid 1px;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  margin: 0 25em 2em 25em;
 }
