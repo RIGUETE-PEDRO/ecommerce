@@ -519,3 +519,16 @@ html {
   text-align: center;
 }
 
+.sessao-top2 {
+  margin-left: 0;
+  padding-left: 0;
+  border-radius: 10px;
+  background-color: #323030; /* Fundo cinza escuro */
+  color: #d4af37; /* Texto dourado */
+  font-family: "Domine", serif; /* Fonte serifada */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Garante que eles quebrem linha se necessário */
+  gap: 2rem; /* Espaçamento entre os produtos */
+  padding: 2rem 0;
+}
