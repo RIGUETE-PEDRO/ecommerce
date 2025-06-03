@@ -120,136 +120,225 @@
                     </div>
                 </form>
                 <!-- Pagamento -->
-                <h5 class="mt-4" style="color: #D4AF37;">Pagamento</h5>
-                <form>
-                    <div class="mb-3">
-                        <label class="form-label">Forma de Pagamento</label>
-                        <select class="form-select" id="formaPagamento" required
-                            onchange="toggleCamposCartao(this.value)">
-                            <option value="">Selecione</option>
-                            <option value="cartao">Cartão de Crédito</option>
-                            <option value="debito">Cartão de Débito</option>
-                            <option value="pix">PIX</option>
-                            <option value="boleto">Boleto Bancário</option>
-                        </select>
+
+                <div class="resumo-pedido">
+                    <h5 class="mt-4" style="color: #D4AF37;">Resumo do Pedido</h5>
+                    <div id="carrinho" class="mb-4">
+                        <!-- Itens vão ser renderizados aqui -->
+                    </div>
+                    <div class="text-end fw-bold fs-5">
+                        Total: R$ <span id="total-geral">0.00</span>
+                    </div>
+                    <div class="wrap">
+                        <button class="button">finalizar pedido</a>
                     </div>
 
-                    <!-- Campos do Cartão -->
-                    <div id="cartao-container" class="wrapper" style="display: none;">
-                        <!-- todo o conteúdo do cartão aqui dentro -->
+                </div>
+                <div>
+                    <h5 class="mt-4" style="color: #D4AF37;">Pagamento</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Forma de Pagamento</label>
+                            <select class="form-select" id="formaPagamento" required
+                                onchange="toggleCamposCartao(this.value)">
+                                <option value="">Selecione</option>
+                                <option value="cartao">Cartão de Crédito</option>
+                                <option value="debito">Cartão de Débito</option>
+                                <option value="pix">PIX</option>
+                                <option value="boleto">Boleto Bancário</option>
+                            </select>
+                        </div>
 
-                        <div class="form-container">
-                            <div class="box-form">
-                                <div class="input-content">
+                        <!-- Campos do Cartão -->
+                        <div id="cartao-container" class="wrapper" style="display: none;">
+                            <!-- todo o conteúdo do cartão aqui dentro -->
 
-                                    <!-- Número do Cartão -->
-                                    <div class="box-input">
-                                        <label>Número do cartão</label>
-                                        <input autocomplete="off" id="input-number" type="text" maxlength="19"
-                                            placeholder="Número do cartão" style="word-spacing: 8px;"
-                                            onkeydown="handleNumber(event)">
-                                        <div class="info"><span class="message"></span></div>
-                                    </div>
 
-                                    <!-- Nome do Titular -->
-                                    <div class="box-input">
-                                        <label>Nome do titular</label>
-                                        <input autocomplete="off" id="input-name" type="text"
-                                            placeholder="Nome como está no cartão" onkeydown="handleName(event)">
-                                        <div class="info"><span class="message"></span></div>
-                                    </div>
+                            <div class="form-container">
+                                <div class="box-form">
+                                    <div class="input-content">
 
-                                    <!-- Validade e CVV -->
-                                    <div class="box-input-more">
-                                        <div class="box-one">
-                                            <label>Validade</label>
-                                            <input autocomplete="off" id="input-validate" maxlength="7" type="text"
-                                                placeholder="mm/aa" onkeydown="handleValidate(event)">
+                                        <!-- Número do Cartão -->
+                                        <div class="box-input">
+                                            <label>Número do cartão</label>
+                                            <input autocomplete="off" id="input-number" type="text" maxlength="19"
+                                                placeholder="Número do cartão" style="word-spacing: 8px;"
+                                                onkeydown="handleNumber(event)">
                                             <div class="info"><span class="message"></span></div>
                                         </div>
 
-                                        <div class="box-two">
-                                            <label>CVV</label>
-                                            <input autocomplete="off" id="input-cvv" type="password" maxlength="3"
-                                                placeholder="cvv" onkeydown="handleCvv(event)">
+                                        <!-- Nome do Titular -->
+                                        <div class="box-input">
+                                            <label>Nome do titular</label>
+                                            <input autocomplete="off" id="input-name" type="text"
+                                                placeholder="Nome como está no cartão" onkeydown="handleName(event)">
                                             <div class="info"><span class="message"></span></div>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <!-- Visual do Cartão -->
-                                <div class="card-content animate__animated animate__backInUp">
-                                    <div class="card-container">
-                                        <div class="card-inner" id="card">
-                                            <!-- Frente -->
-                                            <div class="card-front">
-                                                <div class="content">
-                                                    <div class="card-header">
-                                                        <span class="icon"><img src="./assets/visa-logo.svg" /></span>
-                                                        <span class="icon"><img
-                                                                src="./assets/contact-less-payment.svg" /></span>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div id="card-user-number" class="number-card">•••• ••••
-                                                            •••• ••••</div>
-                                                        <div class="name-and-date">
-                                                            <div id="card-user-name" class="name">(Seu nome)</div>
-                                                            <div id="card-user-date" class="date">••/••••</div>
+                                        <!-- Validade e CVV -->
+                                        <div class="box-input-more">
+                                            <div class="box-one">
+                                                <label>Validade</label>
+                                                <input autocomplete="off" id="input-validate" maxlength="7" type="text"
+                                                    placeholder="mm/aa" onkeydown="handleValidate(event)">
+                                                <div class="info"><span class="message"></span></div>
+                                            </div>
+
+                                            <div class="box-two">
+                                                <label>CVV</label>
+                                                <input autocomplete="off" id="input-cvv" type="password" maxlength="3"
+                                                    placeholder="cvv" onkeydown="handleCvv(event)">
+                                                <div class="info"><span class="message"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Visual do Cartão -->
+                                    <div class="card-content animate__animated animate__backInUp">
+                                        <div class="card-container">
+                                            <div class="card-inner" id="card">
+                                                <!-- Frente -->
+                                                <div class="card-front">
+                                                    <div class="content">
+                                                        <div class="card-header">
+                                                            <span class="icon"><img
+                                                                    src="./assets/visa-logo.svg" /></span>
+                                                            <span class="icon"><img
+                                                                    src="./assets/contact-less-payment.svg" /></span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div id="card-user-number" class="number-card">•••• ••••
+                                                                •••• ••••</div>
+                                                            <div class="name-and-date">
+                                                                <div id="card-user-name" class="name">(Seu nome)</div>
+                                                                <div id="card-user-date" class="date">••/••••</div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <!-- Verso -->
-                                            <div class="card-back">
-                                                <div class="magnetic-strip"></div>
-                                                <div class="signature-cvv" style="display:flex; margin-top:20px;">
-                                                    <div class="signature-box">
+                                                <!-- Verso -->
+                                                <div class="card-back">
+                                                    <div class="magnetic-strip"></div>
+                                                    <div class="signature-cvv" style="display:flex; margin-top:20px;">
+                                                        <div class="signature-box">
 
+                                                        </div>
+                                                        <div class="cvv-box">
+                                                            <label>CVV</label>
+                                                            <div class="cvv">***</div>
+                                                        </div>
                                                     </div>
-                                                    <div class="cvv-box">
-                                                        <label>CVV</label>
-                                                        <div class="cvv">***</div>
+                                                    <div class="security-text">
+                                                        Este cartão é propriedade do emissor. Use apenas para transações
+                                                        autorizadas.
                                                     </div>
                                                 </div>
-                                                <div class="security-text">
-                                                    Este cartão é propriedade do emissor. Use apenas para transações
-                                                    autorizadas.
-                                                </div>
-                                            </div>
 
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- Link para download do boleto -->
+
+
+
+                                    <!-- Botão -->
+                                    <div class="espaço-submit"></div>
                                 </div>
-                                <!-- Botão -->
-                                <button id="input-submit" type="submit" class="button-submit">Adicionar
-                                    cartão</button>
                             </div>
                         </div>
-                </form>
+                    </form>
+                    <div id="botao-boleto" class="btn btn-warning">
+                        <button onclick="gerarBoletoPDF()">Gerar Boleto para Teste</button>
+                    </div>
+                    <canvas id="barcodeCanvas" style="display: none;"></canvas>
 
-            </div>
-        </div>
-        <div class="resumo-pedido">
-            <h5 class="mt-4" style="color: #D4AF37;">Resumo do Pedido</h5>
-            <div id="carrinho" class="mb-4">
-                <!-- Itens vão ser renderizados aqui -->
-            </div>
-            <div class="text-end fw-bold fs-5">
-                Total: R$ <span id="total-geral">0.00</span>
-            </div>
-            <div class="wrap">
-            <button class="button">finalizar pedido</a>
-          </div>
 
+
+                </div>
+            </div>
         </div>
     </main>
 
+
+    <!-- Rodapé -->
+    <section>
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>A EcoBelle</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item2 mb-2"><a href="../SOBRE/index-sobre.html"
+                                    class="nav-link p-0 text-body-secondary">Nossa Historia</a></li>
+                            <li class="nav-item2 mb-2"><a href="../CONTATOS/index_contatos.html"
+                                    class="nav-link p-0 text-body-secondary">Entre em contato</a></li>
+                            <li class="nav-item2 mb-2"><a href="../PRODUTOS/index-produto.html"
+                                    class="nav-link p-0 text-body-secondary">Nossos produtos</a></li>
+                            <li class="nav-item2 mb-2"><a href="../CARINHO/index-carrinho.html"
+                                    class="nav-link p-0 text-body-secondary">Seu carrinho </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Nossa Visão</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKYnrUPNZzn/"
+                                    class="nav-link p-0 text-body-secondary">O seu bem estar</a></li>
+                            <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKYoYpzN6Dy/"
+                                    class="nav-link p-0 text-body-secondary">Iniciativas</a></li>
+                            <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKYwUGiNTIv/"
+                                    class="nav-link p-0 text-body-secondary">Sustentabilidade</a></li>
+                            <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKY1YHItT7D/"
+                                    class="nav-link p-0 text-body-secondary">Faça parte de nossa misão</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Redes Sociais</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item2 mb-2"><a href="https://www.instagram.com/ecobelle_beleza/"
+                                    class="nav-link p-0 text-body-secondary">Intragram</a></li>
+                            <li class="nav-item2 mb-2"><a href="https://www.facebook.com/profile.php?id=61576788848855"
+                                    class="nav-link p-0 text-body-secondary">Facebook</a></li>
+                            <li class="nav-item2 mb-2"><a href="https://www.tiktok.com/@ecobellee"
+                                    class="nav-link p-0 text-body-secondary">Tik Tok</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Cadastre-se e receba lançamentos e ofertas com muito amor e beleza!</h5>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                    class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                    class="form-control" placeholder="Digite seu Email"> <button class="btn btn-primary"
+                                    type="button">Confirmar</button> </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2025 Eco Bella. Todos os direitos reservados.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi"
+                                    width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi"
+                                    width="24" height="24" aria-hidden="true">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
     <script src="../js/bootstrap.bundle.js"></script>
     <script src="../js/js.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="js/CARRINHO.js"></script>
     <script src="js/script.js"></script>
+
 
 </body>
 
