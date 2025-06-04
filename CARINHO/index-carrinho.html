@@ -60,7 +60,7 @@
     </header>
     <main>
         <div class="formulario">
-            <div class="container mt-5 mb-5">
+            <div class="container-carrinho mt-5 mb-5">
                 <h2 class="mb-4 text-center" style="color: #D4AF37;">Finalizar Compra</h2>
                 <form>
                     <div class="row">
@@ -129,9 +129,7 @@
                     <div class="text-end fw-bold fs-5">
                         Total: R$ <span id="total-geral">0.00</span>
                     </div>
-                    <div class="wrap">
-                        <button class="button">finalizar pedido</a>
-                    </div>
+
 
                 </div>
                 <div>
@@ -190,7 +188,9 @@
                                                     placeholder="cvv" onkeydown="handleCvv(event)">
                                                 <div class="info"><span class="message"></span></div>
                                             </div>
+
                                         </div>
+
                                     </div>
 
                                     <!-- Visual do Cartão -->
@@ -238,24 +238,34 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="wrap">
+                                        <button class="button">finalizar pedido</a>
+                                    </div>
                                     <!-- Link para download do boleto -->
 
 
 
                                     <!-- Botão -->
-                                    <div class="espaço-submit"></div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </form>
-                    <div id="botao-boleto" class="btn btn-warning">
-                        <button onclick="gerarBoletoPDF()">Gerar Boleto para Teste</button>
+
+
+                    <div class="wrap">
+                        <div id="botao-boleto">
+                            <button class="button" onclick="gerarBoletoPDF()">Gerar Boleto</button>
+                        </div>
+                        <canvas id="barcodeCanvas" style="display: none;"></canvas>
                     </div>
-                    <canvas id="barcodeCanvas" style="display: none;"></canvas>
 
-
-
+                    <div id="qrcode" style="margin: 15px 0;"></div>
                 </div>
+
+                <div id="pix-container" style="display:none;"></div>
+
+
             </div>
         </div>
     </main>
@@ -263,6 +273,8 @@
 
     <!-- Rodapé -->
     <section>
+        <div class="linha-divisao">
+        </div>
         <div class="container">
             <footer class="py-5">
                 <div class="row">
@@ -296,7 +308,7 @@
                         <h5>Redes Sociais</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item2 mb-2"><a href="https://www.instagram.com/ecobelle_beleza/"
-                                    class="nav-link p-0 text-body-secondary">Intragram</a></li>
+                                    class="nav-link p-0 text-body-secondary">Instagram</a></li>
                             <li class="nav-item2 mb-2"><a href="https://www.facebook.com/profile.php?id=61576788848855"
                                     class="nav-link p-0 text-body-secondary">Facebook</a></li>
                             <li class="nav-item2 mb-2"><a href="https://www.tiktok.com/@ecobellee"
@@ -329,9 +341,9 @@
             </footer>
         </div>
     </section>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="../js/bootstrap.bundle.js"></script>
     <script src="../js/js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>

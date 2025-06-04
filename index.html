@@ -157,24 +157,14 @@
 
                 <!-- Seção de Preço -->
                 <div class="filter-section mb-4">
-                    <h6>Preço</h6>
-                    <div class="form-check">
-                        <input class="form-check-input text" type="checkbox" id="categoria3">
-                        <label class="form-check-label text" for="categoria3">Até R$ 50</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input text" type="checkbox" id="categoria3">
-                        <label class="form-check-label text" for="categoria3">R$ 51 - R$ 100</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input text" type="checkbox" id="categoria3">
-                        <label class="form-check-label text" for="categoria3">R$ 101 - R$ 200</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input text" type="checkbox" id="categoria3">
-                        <label class="form-check-label text" for="categoria3">Acima de R$ 200</label>
+                    <h6>Preço até</h6>
+                    <div class="d-flex flex-column align-items-center">
+                        <input type="range" id="preco" class="form-range" min="0" max="500" value="0" step="10"
+                            oninput="atualizarPreco()">
+                        <span id="valorPreco">R$ 250</span>
                     </div>
                 </div>
+
 
                 <!-- Seção de categoria -->
                 <div class="filter-section mb-4">
@@ -252,76 +242,76 @@
                 <div class="sessao-top d-flex flex-wrap gap-3">
                     <div class="div10 product-home-card">
                         <img src="img/imgProd/especial2.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Sérum Iluminador Raízes</div>
+                        <div class="valor">R$ 30,00</div>
+                        <div class="preco">R$ 40,00</div>
                     </div>
                     <div class="div11 product-home-card">
                         <img src="img/imgProd/especial1.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Creme Facial Rosa Mosqueta</div>
+                        <div class="valor">R$ 59,99</div>
+                        <div class="preco">R$ 70,00</div>
                     </div>
 
                     <div class="div12 product-home-card">
                         <img src="img/imgProd/especial3.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Perfume Florescer</div>
+                        <div class="valor">R$ 59,99</div>
+                        <div class="preco">R$ 70,00</div>
                     </div>
                     <div class="div15 product-home-card">
                         <img src="img/imgProd/especial4.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Creme Essência</div>
+                        <div class="valor">R$ 42,00</div>
+                        <div class="preco">R$ 60,00</div>
                     </div>
                     <div class="div16 product-home-card">
                         <img src="img/imgProd/prod10.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Kit Essencial EcoBelle</div>
+                        <div class="valor">R$ 89,99</div>
+                        <div class="preco">R$ 100,00</div>
                     </div>
                     <div class="div17 product-home-card">
                         <img src="img/imgProd/prod11.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Loção Ervas do Campo</div>
+                        <div class="valor">R$ 40,00</div>
+                        <div class="preco">R$ 55,00</div>
                     </div>
                     <div class="div18 product-home-card">
                         <img src="img/imgProd/prod16.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Sabonete Liquido Raízes</div>
+                        <div class="valor">R$ 30,00</div>
+                        <div class="preco">R$ 36,99</div>
                     </div>
                     <div class="div19 product-home-card">
                         <img src="img/imgProd/prod19.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Kit Ritual Despertar</div>
+                        <div class="valor">R$ 199,99</div>
+                        <div class="preco">R$ 250,00</div>
                     </div>
                     <div class="div20 product-home-card">
                         <img src="img/imgProd/prod21.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Revitalizante Sêrum Facial</div>
+                        <div class="valor">R$ 29,99</div>
+                        <div class="preco">R$ 39,99</div>
                     </div>
                     <div class="div10 product-home-card">
                         <img src="img/imgProd/prod17.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Desodorante Corporal Orvalho</div>
+                        <div class="valor">R$ 18,00</div>
+                        <div class="preco">R$ 27,00</div>
                     </div>
                     <div class="div10 product-home-card">
                         <img src="img/imgProd/prod12.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Loção Ambiente</div>
+                        <div class="valor">R$ 29,99</div>
+                        <div class="preco">R$ 40,00</div>
                     </div>
                     <div class="div10 product-home-card">
                         <img src="img/imgProd/f6.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
-                        <div class="preco">R$ 120,00</div>
+                        <div class="nome">Demaquilante Aurora</div>
+                        <div class="valor">R$ 39,00</div>
+                        <div class="preco">R$ 50,00</div>
                     </div>
 
                 </div>
@@ -340,49 +330,49 @@
                 <div class="sessao-top2 d-flex flex-wrap gap-3">
                     <div class="div10 product-home-card">
                         <img src="img/imgProd/especial2.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
+                        <div class="nome">Sérum Iluminador Raízes</div>
+                        <div class="valor">R$ 30,00</div>
                     </div>
                     <div class="div11 product-home-card">
                         <img src="img/imgProd/especial1.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
+                        <div class="nome">Creme Facial Rosa Mosqueta</div>
+                        <div class="valor">R$ 59,99</div>
                     </div>
 
                     <div class="div12 product-home-card">
                         <img src="img/imgProd/especial3.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
+                        <div class="nome">Perfume Florescer</div>
+                        <div class="valor">R$ 59,99</div>
                     </div>
                     <div class="div15 product-home-card">
                         <img src="img/imgProd/especial4.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
+                        <div class="nome">Creme Essência</div>
+                        <div class="valor">R$ 42,00</div>
                     </div>
                     <div class="div17 product-home-card">
-                        <img src="img/imgProd/prod11.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
+                        <img src="img/imgProd/f7.png" alt="Produto">
+                        <div class="nome">Máscara Florescer</div>
+                        <div class="valor">R$ 120,00</div>
                     </div>
                     <div class="div19 product-home-card">
-                        <img src="img/imgProd/prod19.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
+                        <img src="img/imgProd/prod14.png" alt="Produto">
+                        <div class="nome">Bruma Hidratante Corporal</div>
+                        <div class="valor">R$ 19,99</div>
                     </div>
                     <div class="div10 product-home-card">
-                        <img src="img/imgProd/prod17.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
+                        <img src="img/imgProd/prod15.png" alt="Produto">
+                        <div class="nome">Esfoliante Aura Botânica</div>
+                        <div class="valor">R$ 48,99</div>
                     </div>
                     <div class="div10 product-home-card">
                         <img src="img/imgProd/prod12.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
+                        <div class="nome">Loção Ambiente</div>
+                        <div class="valor">R$ 29,99</div>
                     </div>
                     <div class="div10 product-home-card">
                         <img src="img/imgProd/f6.png" alt="Produto">
-                        <div class="nome">Nome do Produto</div>
-                        <div class="valor">R$ 89,90</div>
+                        <div class="nome">Demaquilante Aurora</div>
+                        <div class="valor">R$ 39,00</div>
                     </div>
                 </div>
             </div>
@@ -444,63 +434,80 @@
                 </button>
             </div>
         </div>
+        <div class="linha-divisao">
+        </div>
     </div>
 
     </main>
 
-      <div class="container">
-    <footer class="py-5">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>A EcoBelle</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item2 mb-2"><a href="../SOBRE/index-sobre.html" class="nav-link p-0 text-body-secondary">Nossa Historia</a></li>
-            <li class="nav-item2 mb-2"><a href="../CONTATOS/index_contatos.html" class="nav-link p-0 text-body-secondary">Entre em contato</a></li>
-            <li class="nav-item2 mb-2"><a href="../PRODUTOS/index-produto.html" class="nav-link p-0 text-body-secondary">Nossos produtos</a></li>
-            <li class="nav-item2 mb-2"><a href="../CARINHO/index-carrinho.html" class="nav-link p-0 text-body-secondary">Seu carrinho </a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Nossa Visão</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKYnrUPNZzn/" class="nav-link p-0 text-body-secondary">O seu bem estar</a></li>
-            <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKYoYpzN6Dy/" class="nav-link p-0 text-body-secondary">Iniciativas</a></li>
-            <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKYwUGiNTIv/" class="nav-link p-0 text-body-secondary">Sustentabilidade</a></li>
-            <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKY1YHItT7D/" class="nav-link p-0 text-body-secondary">Faça parte de nossa misão</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Redes Sociais</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item2 mb-2"><a href="https://www.instagram.com/ecobelle_beleza/" class="nav-link p-0 text-body-secondary">Intragram</a></li>
-            <li class="nav-item2 mb-2"><a href="https://www.facebook.com/profile.php?id=61576788848855" class="nav-link p-0 text-body-secondary">Facebook</a></li>
-            <li class="nav-item2 mb-2"><a href="https://www.tiktok.com/@ecobellee" class="nav-link p-0 text-body-secondary">Tik Tok</a></li>
-          </ul>
-        </div>
-        <div class="col-md-5 offset-md-1 mb-3">
-          <form>
-            <h5>Cadastre-se e receba lançamentos e ofertas com muito amor e beleza!</h5>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
-                class="visually-hidden">Email address</label> <input id="newsletter1" type="email" class="form-control"
-                placeholder="Digite seu Email"> <button class="btn btn-primary" type="button">Confirmar</button> </div>
-          </form>
-        </div>
-      </div>
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>&copy; 2025 Eco Bella. Todos os direitos reservados.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24"
-                height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24"
-                height="24" aria-hidden="true">
-                <use xlink:href="#facebook"></use>
-              </svg></a></li>
-        </ul>
-      </div>
-    </footer>
-        </div>
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>A EcoBelle</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item2 mb-2"><a href="../SOBRE/index-sobre.html"
+                                class="nav-link p-0 text-body-secondary">Nossa Historia</a></li>
+                        <li class="nav-item2 mb-2"><a href="../CONTATOS/index_contatos.html"
+                                class="nav-link p-0 text-body-secondary">Entre em contato</a></li>
+                        <li class="nav-item2 mb-2"><a href="../PRODUTOS/index-produto.html"
+                                class="nav-link p-0 text-body-secondary">Nossos produtos</a></li>
+                        <li class="nav-item2 mb-2"><a href="../CARINHO/index-carrinho.html"
+                                class="nav-link p-0 text-body-secondary">Seu carrinho </a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Nossa Visão</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKYnrUPNZzn/"
+                                class="nav-link p-0 text-body-secondary">O seu bem estar</a></li>
+                        <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKYoYpzN6Dy/"
+                                class="nav-link p-0 text-body-secondary">Iniciativas</a></li>
+                        <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKYwUGiNTIv/"
+                                class="nav-link p-0 text-body-secondary">Sustentabilidade</a></li>
+                        <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKY1YHItT7D/"
+                                class="nav-link p-0 text-body-secondary">Faça parte de nossa misão</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Redes Sociais</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item2 mb-2"><a href="https://www.instagram.com/ecobelle_beleza/"
+                                class="nav-link p-0 text-body-secondary">Instagram</a></li>
+                        <li class="nav-item2 mb-2"><a href="https://www.facebook.com/profile.php?id=61576788848855"
+                                class="nav-link p-0 text-body-secondary">Facebook</a></li>
+                        <li class="nav-item2 mb-2"><a href="https://www.tiktok.com/@ecobellee"
+                                class="nav-link p-0 text-body-secondary">Tik Tok</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Cadastre-se e receba lançamentos e ofertas com muito amor e beleza!</h5>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                class="form-control" placeholder="Digite seu Email"> <button class="btn btn-primary"
+                                type="button">Confirmar</button> </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2025 Eco Bella. Todos os direitos reservados.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi"
+                                width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi"
+                                width="24" height="24" aria-hidden="true">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
 
     <script src="js/principal.js"></script>
     <script src="js/bootstrap.bundle.js"></script>

@@ -54,7 +54,7 @@ p {
     transform: translateY(1em);
   }
 
-  .container {
+  .container-sobre {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;

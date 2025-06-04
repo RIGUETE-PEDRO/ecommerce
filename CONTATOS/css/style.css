@@ -62,10 +62,10 @@ input {
   background-size: cover; /* cobre toda a área */
   background-position: center; /* centraliza a imagem */
   background-repeat: no-repeat; /* evita repetição */
-  padding: 7em 2em; /* espaço interno */
+  padding-top: 1em;
   border-radius: 16px; /* cantos arredondados */
   color: #000;
-  height: 100vh; /* Para garantir que o corpo ocupe toda a altura da tela */
+  
   margin: 0;
   /* texto em preto (pode ajustar) */
 }
@@ -183,3 +183,12 @@ content: '';
     opacity: 0;
   }
 }
+
+#newsletter11{
+  background-color: white;
+}
+
+.form-control1::placeholder{
+  background-color: white;
+}
+

@@ -59,18 +59,7 @@
 .btn-comprar:hover {
   background-color: #146c43;
 }
-/* responsavel pelo footer */
-.nav-item2 .nav-link {
-  color: #d4af37 !important; /* Cor dourada do texto */
-  padding: 1em 1em; /* Espaço interno (padding) ao redor do texto */
-  transition: background-color 0.3s, color 0.3s; /* Transição suave ao mudar cor de fundo e texto */
-  margin-right: 0.5em; /* Espaço à direita entre os itens */
-}
 
- .nav-link:hover {
-    color: #ffffff !important;
-    text-decoration: none;
-  }
-  .nav-link {
-  transition: color 0.2s ease-in-out;
-}
+
+
+

@@ -27,3 +27,13 @@
   }
 
   typeEffect();
+
+  const preco = document.getElementById('preco');
+  const valor = document.getElementById('valorPreco');
+
+  function atualizarPreco() {
+    valor.textContent = `R$ ${preco.value}`;
+  }
+
+  // Atualiza o valor ao carregar a página
+  window.addEventListener('DOMContentLoaded', atualizarPreco);

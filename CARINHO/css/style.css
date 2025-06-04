@@ -19,9 +19,7 @@ h4 {
   color: #28a745; /* cor do carrinho (pode trocar) */
 }
 
-p {
-  color: black;
-}
+
 
 .card {
   border-radius: 12px;
@@ -72,11 +70,17 @@ p {
   font-size: 18px;
 }
 
-.container {
-  background-color: #000;
-  color: #d4af37;
-  border: #d4af37 solid 0.2em;
-}
+.container-carrinho {
+    max-width: 70em ;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Domine', serif;
+    color: #ffffff;
+    background-color: black;
+    border: #D4AF37 2px solid;
+    border-radius: 12px;
+    box-shadow: 0 0em 10em rgba(0, 0, 0, 1.7);
+  }
 .form-control {
   background-color: #000;
   color: #d4af37;
@@ -102,7 +106,7 @@ p {
 }
 
 .button {
-  margin-top: 1em;
+  margin-top: 4em;
   margin-bottom: 1em;
   min-width: 300px;
   min-height: 60px;
@@ -614,4 +618,123 @@ input:focus {
   color: #efefef;
 }
 
+#newsletter1{
+  background-color: white;
+}
 
+.form-control::placeholder{
+  background-color: white;
+}
+
+
+.button-boleto{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  min-width: 300px;
+  min-height: 60px;
+  display: inline-flex;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #11fa09;
+  background: linear-gradient(
+    90deg,
+    rgb(241, 255, 84) 0%,
+    rgb(192, 152, 51) 100%
+  );
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(206, 103, 6, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.button-boleto::before {
+  content: "";
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #d78a0e;
+  box-shadow: 0 0 60px rgba(238, 246, 2, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.button-boleto:hover,
+.button-boleto:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.button-boleto:hover::before,
+.button-boleto:focus::before {
+  opacity: 1;
+}
+
+.button-boleto:hover::after,
+.button-boleto:focus::after {
+  animation: none;
+  display: none;
+}
+
+#pix-container {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente (se precisar) */
+  margin: 20px auto;       /* margem automática para centralizar na página */
+  width: 220px;            /* largura um pouco maior que o QR code */
+}
+
+.card-content {
+  width: 320px;
+  height: 190px;
+  position: relative;
+  perspective: 1000px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* quando a classe rotate estiver ativa, gira o card */
+.card-content.rotate {
+  transform: rotateY(180deg);
+}
+
+/* frente do cartão */
+.card-content > .card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: linear-gradient(135deg, #4d4d4d, #222);
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* verso do cartão */
+.card-content > .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: linear-gradient(135deg, #222, #111);
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: rotateY(180deg);
+}

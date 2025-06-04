@@ -1,8 +1,8 @@
 console.log('Script carregado com sucesso!');
 
     const produtos = [
-        { id: 1, nome: 'Creme Facial Rosa Mosqueta', preco: 59.99, qtd: 1, imagem: 'https://via.placeholder.com/100' },
-        { id: 2, nome: 'Sérum Iluminador Raízes', preco: 30.00, qtd: 2, imagem: 'https://via.placeholder.com/100' }
+        { id: 1, nome: 'Creme Facial Rosa Mosqueta', preco: 59.99, qtd: 1, imagem: '../../img/imgProd/especial1.png' },
+        { id: 2, nome: 'Sérum Iluminador Raízes', preco: 30.00, qtd: 2, imagem: '../../img/imgProd/especial2.png' }
     ];
 
     function renderCarrinho() {
@@ -51,22 +51,35 @@ console.log('Script carregado com sucesso!');
 
 
  function toggleCamposCartao(valor) {
-    const containerCartao = document.getElementById('cartao-container');
-    const botaoBoleto = document.getElementById('botao-boleto');
+  const containerCartao = document.getElementById('cartao-container');
+  const botaoBoleto = document.getElementById('botao-boleto');
+  const containerPix = document.getElementById('pix-container'); // container para QR PIX
 
-    if (valor === 'cartao' || valor === 'debito') {
-      containerCartao.style.display = 'block';
-      botaoBoleto.style.display = 'none';
-    } else {
-      containerCartao.style.display = 'none';
-    }
-
-    if (valor === 'boleto') {
-      botaoBoleto.style.display = 'block';
-    } else {
-      botaoBoleto.style.display = 'none';
-    }
+  if (valor === 'cartao' || valor === 'debito') {
+    containerCartao.style.display = 'block';
+    botaoBoleto.style.display = 'none';
+    containerPix.style.display = 'none';
+  } else {
+    containerCartao.style.display = 'none';
   }
+
+  if (valor === 'boleto') {
+    botaoBoleto.style.display = 'block';
+    containerPix.style.display = 'none';
+  } else {
+    botaoBoleto.style.display = 'none';
+  }
+
+  if (valor === 'pix') {
+    containerPix.style.display = 'block';
+    gerarPixQRCode();  // chama função para gerar QR PIX
+    botaoBoleto.style.display = 'none';
+    containerCartao.style.display = 'none';
+  } else if (valor !== 'cartao' && valor !== 'debito' && valor !== 'boleto') {
+    // Se não for nenhuma opção acima, esconde containerPix só para garantir
+    containerPix.style.display = 'none';
+  }
+}
 
 
 const cardBox = document.querySelector('.card-content'); // container que será rotacionado
@@ -236,4 +249,18 @@ async function gerarBoletoPDF() {
 }
 
  
-  
+ function gerarPixQRCode() {
+  const pixData = "00020126360014BR.GOV.BCB.PIX0136your-pix-key-here52040000530398654051005005802BR5909Nome do Benef6009Cidade XYZ62070503***6304"; // substitua pelo seu payload PIX real
+
+  const qrcodeContainer = document.getElementById('pix-container');
+  qrcodeContainer.innerHTML = ""; // limpa QR anterior
+
+  new QRCode(qrcodeContainer, {
+    text: pixData,
+    width: 200,
+    height: 200,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H,
+  });
+}
