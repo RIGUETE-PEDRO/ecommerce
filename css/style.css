@@ -68,7 +68,7 @@
 
 <<<<<<< HEAD
 =======
-.search-container {
+..search-container {
   display: flex; /* Flexbox */
   width: 100%; /* Largura total */
   max-width: 6em; /* Largura máxima */

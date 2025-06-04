@@ -746,3 +746,20 @@ input:focus {
   user-select: none;
 }
 
+.cart-button-shover {
+  position: relative;
+  display: inline-flex; /* Flex para alinhar ícone e badge */
+  align-items: center;
+  gap: 6px;
+  background-color: transparent;
+  border: 1px solid #d4af37; /* borda dourada */
+  color: #d4af37; /* texto dourado */
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  text-decoration: none; /* remove sublinhado do link */
+  user-select: none;
+}
