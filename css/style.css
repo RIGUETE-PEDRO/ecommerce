@@ -66,6 +66,18 @@
 /* Estilização geral do corpo da página */
 
 
+<<<<<<< HEAD
+=======
+.search-container {
+  display: flex; /* Flexbox */
+  width: 100%; /* Largura total */
+  max-width: 6em; /* Largura máxima */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  border-radius: 4px; /* Cantos arredondados */
+  background-color: #878585;
+  font-family: "Domine", serif;
+}
+>>>>>>> 49b42955222a9db8ba87140b2148a48f1baf900a
 
 
 
@@ -136,6 +148,7 @@
   user-select: none;
 }
 
+
 /* Hover com fundo dourado e texto preto */
 .cart-button:hover {
   background-color: #d4af37;
@@ -185,23 +198,7 @@
   display: block; /* mostra a imagem hover no hover */
 }
 
-.cart-button-shover {
-  position: relative;
-  display: inline-flex; /* Flex para alinhar ícone e badge */
-  align-items: center;
-  gap: 6px;
-  background-color: transparent;
-  border: 1px solid #d4af37; /* borda dourada */
-  color: #d4af37; /* texto dourado */
-  padding: 5px 10px;
-  font-size: 16px;
-  border-radius: 4px;
-  line-height: 1.5;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  text-decoration: none; /* remove sublinhado do link */
-  user-select: none;
-}
+/* removi o cart-button-shover desse local e joguei para o css dde carinho */
 
 /* Fonte luxo para toda a página */
 body {
@@ -328,9 +325,9 @@ html {
   gap: 8px;
 }
 
-.sessao-top {
+/* .sessao-top {
   background-color: #ffffff;
-}
+} */
 
 .linha-dourada {
   border-bottom: 0.2em solid #d4af37;
