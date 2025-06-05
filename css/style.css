@@ -323,9 +323,6 @@ html {
   gap: 8px;
 }
 
-/* .sessao-top {
-  background-color: #ffffff;
-} */
 
 .linha-dourada {
   border-bottom: 0.2em solid #d4af37;
@@ -346,6 +343,8 @@ html {
   color: white;
   padding-top: 0.5em;
 }
+
+/*tornei o filtro resposivo*/
 @media (max-width: 700px) {
   .div9-filtro{
     padding-left: 0.5rem;
