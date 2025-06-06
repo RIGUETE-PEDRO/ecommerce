@@ -38,7 +38,9 @@
   color: #555;
 }
 
-/* Botões de ação */
+/* Botões de ação  confirmar - do email, do footer.
+----aparentemente é inutil, ta sobrescrevendo outro da principal. pode tirar acho
+
 .btn-primary {
   background-color: #d4af37;
   border-color: #d4af37;
@@ -50,11 +52,13 @@
   background-color: #b68c30;
   border-color: #b68c30;
   color: #000;
-}
+} */
 
-/* Botão de comprar (btn-success) já utiliza o estilo padrão do Bootstrap, mas você pode ajustar se necessário */
+/*   atoa aqui......
+
+Botão de comprar (btn-success) já utiliza o estilo padrão do Bootstrap, mas você pode ajustar se necessário
 input {
-}
+} */
 
 .fundo {
   /* opacidade do fundo */
@@ -127,7 +131,7 @@ input {
   font-weight: 700;
   color: #313133;
   background: #11fa09;
-background: linear-gradient(90deg, rgb(241, 255, 84) 0%, rgb(192, 152, 51) 100%);
+  background: linear-gradient(90deg, rgb(241, 255, 84) 0%, rgb(192, 152, 51) 100%);
   border: none;
   border-radius: 1000px;
   box-shadow: 12px 12px 24px rgba(206, 103, 6, 0.64);
@@ -137,6 +141,7 @@ background: linear-gradient(90deg, rgb(241, 255, 84) 0%, rgb(192, 152, 51) 100%)
   position: relative;
   padding: 10px;
   }
+
 
 .button::before {
 content: '';
@@ -184,11 +189,12 @@ content: '';
   }
 }
 
-#newsletter11{
+/* #newsletter11{
   background-color: white;
-}
+} */
 
-.form-control1::placeholder{
+/* .form-control1::placeholder{
   background-color: white;
-}
+} */
+
 

@@ -550,3 +550,12 @@ html {
 .remover{
   margin-left: 1em;
 }
+
+
+
+
+/* texto subir */
+.link-body-emphasis-subi{
+  text-decoration: none;
+  color: white;
+}
