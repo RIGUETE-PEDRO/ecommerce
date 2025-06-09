@@ -86,7 +86,7 @@ ecommerce/
     │   └── js/
     └── js/
 ```
-
+---
 ### 💡 Decisões de Design e Estrutura
 Divisão por Página:
 O projeto foi estruturado com uma pasta para cada página principal do site (CARRINHO, CONTATOS, PRODUTOS, SOBRE). Essa organização facilita a manutenção, permite reutilização de componentes e torna o código mais escalável. Há também uma subpasta para a política de privacidade dentro de SOBRE/, destacando a atenção às boas práticas legais (LGPD).
@@ -109,7 +109,7 @@ Selecionamos imagens com boa resolução para valorizar os produtos e aumentar a
 Design Focado na Experiência do Usuário:
 Todas as decisões foram baseadas em responsividade (mobile-first), fluidez de navegação, legibilidade e interatividade.
 
-
+---
 ### 👤 Autor
 
 Feito por **[PEDRO HENRIQUE RIGUETE DE OLIVEIRA MARTINS, RIQUI GABRIEL SALOMÃO LIRIO]**.
