@@ -1,67 +1,89 @@
 body {
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
 
   margin: 0;
   color: #fdfdfd; /* texto padrão escuro para boa leitura */
 }
+/* galeria estatica */
+.gallery-container {
+  max-width: 800px;
+  margin: auto;
+}
+/*imagem da galeria div que a armazenara*/
+.main-image {
+  width: 100%;
+  height: 500px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+/*personalização da imagem*/
+.main-image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.5rem;
+}
+
+.thumbnails img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.thumbnails img:hover,
+.thumbnails img.active {
+  border-color: #ffd700;
+}
 
 
-    .gallery-container {
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .main-image {
-      width: 100%;
-      height: 500px;
-      background-color: #1e1e1e;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
-    }
-
-    .main-image img {
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 10px;
-      border: 1px solid #333;
-    }
-
-    .thumbnails {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      overflow-x: auto;
-      padding: 0.5rem;
-    }
-
-    .thumbnails img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 2px solid transparent;
-      cursor: pointer;
-      transition: border 0.3s ease;
-    }
-
-    .thumbnails img:hover,
-    .thumbnails img.active {
-      border-color: #ffd700;
-    }
 
 
-    .produto-nome{
-      text-align: center;
-    }
+/* Estilo principal do botão */
+.btn-agora {
+  
+  padding: 14px 32px; 
+  font-size: 1rem; 
+  background: linear-gradient(45deg, #3d8b40, #549957);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex; 
+  align-items: center;
+  margin-bottom: 1em;
+}
 
-    .btn-comprar {
-  background-color: #198754;
-  color: #fff;
-    }
+/* Efeito ao passar o mouse por cima */
+.btn-agora:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
 
-    .btn-comprar:hover {
-  background-color: #146c43;
+.btn-agora .fas {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.btn-agora:hover .fas {
+  transform: rotate(-15deg);
 }

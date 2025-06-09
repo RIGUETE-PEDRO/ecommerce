@@ -62,6 +62,92 @@
   background-color: #146c43;
 }
 
+/* --- Estilo Geral do Card de Produto --- */
+.product-card {
+    border: none; /* Remove a borda padrão do card */
+    border-radius: 15px; /* Cantos mais arredondados para um visual suave */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra sutil para dar profundidade */
+    overflow: hidden; /* Garante que nada "vaze" dos cantos arredondados */
+    transition: all 0.4s ease-in-out; /* Animação suave para todas as transições */
+    background-color: #ffffff; /* Fundo branco padrão */
+}
+
+/* --- EFEITO AO PASSAR O MOUSE (HOVER) --- */
+.product-card:hover {
+    transform: translateY(-10px); /* Eleva o card um pouco para cima */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); /* Aumenta a sombra para destacar */
+}
 
 
+/* --- EFEITO DE ZOOM NA IMAGEM AO PASSAR O MOUSE NO CARD --- */
 
+
+/* --- Corpo do Card (Texto) --- */
+.card-body {
+    padding: 20px;
+    text-align: center; /* Centraliza o texto para um visual mais limpo */
+}
+
+/* --- Título do Produto --- */
+.card-title {
+    font-size: 1.1rem; /* Tamanho da fonte do título */
+    font-weight: 600; /* Deixa o título um pouco mais forte (semi-bold) */
+    color: #333; /* Cor escura, mas não preto puro */
+    margin-bottom: 8px;
+}
+
+/* --- Texto do Preço e Hashtag --- */
+.card-text {
+    font-size: 1.2rem; /* Aumenta o tamanho do preço para destaque */
+    font-weight: 700; /* Deixa o preço em negrito */
+    color: #2e7d32; /* Uma cor rosa/magenta para o preço */
+    margin-bottom: 20px;
+}
+
+/* --- Estilização dos Botões dentro do Card --- */
+.product-card .btn {
+    border-radius: 50px; /* Deixa os botões em formato de pílula */
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+/* Estilo do botão "Ver Detalhes" */
+.product-card .btn-primary {
+    background-color: transparent;
+    border: 2px solid #6c757d; /* Borda cinza */
+    color: #6c757d;
+}
+
+.product-card .btn-primary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Estilo do botão "Adquirir" */
+.product-card .btn-success {
+    background-color: #2e7d32; /* Usa a mesma cor de destaque do preço */
+    border: 2px solid #2e7d32;
+    color: #fff;
+}
+
+.product-card .btn-success:hover {
+    background-color: #276b2a; /* Um tom um pouco mais escuro para o hover */
+    border-color: #1a511d;
+    transform: scale(1.05); /* Aumenta um pouco o botão no hover */
+}
+
+
+/* Media Query para telas entre 800px e 1000px de largura */
+@media (min-width: 800px) and (max-width: 1000px) {
+  
+  /* Se o seu HTML usa 'col-md-3' (que normalmente resulta em 4 por linha),
+    nós vamos forçar ele a se comportar como se fosse 'col-md-4' (3 por linha).
+  */
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 33.333333%; /* Força a coluna a ocupar 1/3 do espaço */
+  }
+
+}
