@@ -80,12 +80,13 @@ A estrutura de pastas do projeto está organizada da seguinte forma para facilit
 │   │   ├── css/
 │   │   └── js/
 │   └── js/
-└── 📂SOBRE/
+|── 📂SOBRE/
 │   ├── css/
 │   ├── politica_privacidade/
 │   │   ├── css/
 │   │   └── js/
 │   └── js/
+|
 └── 📜 README.md
 ```
 ---
