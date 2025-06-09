@@ -89,25 +89,25 @@ ecommerce/
 ```
 ---
 ### 💡 Decisões de Design e Estrutura
-Divisão por Página:
+**Divisão por Página:**
 O projeto foi estruturado com uma pasta para cada página principal do site (CARRINHO, CONTATOS, PRODUTOS, SOBRE). Essa organização facilita a manutenção, permite reutilização de componentes e torna o código mais escalável. Há também uma subpasta para a política de privacidade dentro de SOBRE/, destacando a atenção às boas práticas legais (LGPD).
 
-Separação de CSS e JS por Página:
+**Separação de CSS e JS por Página:**
 Dentro de cada página, os arquivos CSS e JS estão separados em subpastas. Isso evita conflitos, melhora a modularidade e permite que diferentes membros da equipe atuem de forma independente.
 
-Pasta img/imgProd/:
-Responsável por armazenar exclusivamente as imagens dos produtos, mantendo a organização e facilitando atualizações futuras.
+**Pasta img/imgProd/:**
+Na pasta imagems deixamos todos as imagens utilizadas no trabalho, alem de criar a pasta imgProd responsável por armazenar exclusivamente as imagens dos produtos, mantendo a organização e facilitando atualizações futuras.
 
-Uso de Bootstrap com CSS Customizado:
+**Uso de Bootstrap com CSS Customizado:**
 Utilizamos o grid e os utilitários do Bootstrap para responsividade rápida, junto com CSS personalizado para criar um visual único com cores, animações e interações exclusivas.
 
-Escolha de Cores e Identidade Visual:
+**Escolha de Cores e Identidade Visual:**
 A paleta principal é composta por preto (elegância, sofisticação) e amarelo (energia, atenção). Essas cores foram aplicadas de forma estratégica nos botões, títulos e destaques.
 
-Imagens de Alta Qualidade:
+**Imagens de Alta Qualidade:**
 Selecionamos imagens com boa resolução para valorizar os produtos e aumentar a confiança do usuário na loja virtual.
 
-Design Focado na Experiência do Usuário:
+**Design Focado na Experiência do Usuário:**
 Todas as decisões foram baseadas em responsividade (mobile-first), fluidez de navegação, legibilidade e interatividade.
 
 ---
