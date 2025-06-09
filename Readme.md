@@ -47,6 +47,15 @@ E pronto! O site estará funcionando localmente.
 
 ---
 
+### 📜 Scripts de Lint, Build e Testes
+Este projeto é puramente front-end estático e não utiliza scripts automáticos de lint, build ou testes. Porém, sugestões para um ambiente mais robusto:
+
+Lint: Pode-se adicionar ESLint para análise de JS.
+
+Build: Ferramentas como Vite ou Webpack podem otimizar performance.
+
+Testes: Pode-se utilizar Jest com Testing Library para testes unitários.
+
 ### 🏛️ Estrutura de Pastas
 
 A estrutura de pastas do projeto está organizada da seguinte forma para facilitar a manutenção:
@@ -72,7 +81,7 @@ ecommerce/
 │   └── js/
 └── SOBRE/
     ├── css/
-    ├── detalhe/
+    ├── politica_privacidade/
     │   ├── css/
     │   └── js/
     └── js/
