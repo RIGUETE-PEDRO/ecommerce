@@ -189,12 +189,13 @@ content: '';
   }
 }
 
-/* #newsletter11{
+
+
+ #newsletter1{
   background-color: white;
-} */
-
-/* .form-control1::placeholder{
+  color: rgb(0, 0, 0);
+ }
+ #newsletter1::placeholder{
   background-color: white;
-} */
-
-
+  color: rgb(0, 0, 0);
+ }
