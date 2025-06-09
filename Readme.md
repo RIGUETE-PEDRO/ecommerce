@@ -112,7 +112,7 @@ Selecionamos imagens com boa resolução para valorizar os produtos e aumentar a
 Todas as decisões foram baseadas em responsividade (mobile-first), fluidez de navegação, legibilidade e interatividade.
 
 ---
-### 👤 Autor
+### 👤 Autores
 
 Feito por **[PEDRO HENRIQUE RIGUETE DE OLIVEIRA MARTINS, RIQUI GABRIEL SALOMÃO LIRIO]**.
 
