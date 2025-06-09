@@ -87,3 +87,7 @@ body {
 .btn-agora:hover .fas {
   transform: rotate(-15deg);
 }
+
+.produto-nome{
+  text-align: center;
+}
