@@ -16,7 +16,7 @@ Este projeto foi desenvolvido com diversas funcionalidades modernas para criar u
 
 ---
 
-### Tecnologias Utilizadas
+### 🛠️ Tecnologias Utilizadas
 
 As seguintes ferramentas e tecnologias foram usadas na construção deste projeto:
 
