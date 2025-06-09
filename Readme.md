@@ -61,31 +61,32 @@ Testes: Pode-se utilizar Jest com Testing Library para testes unitários.
 
 A estrutura de pastas do projeto está organizada da seguinte forma para facilitar a manutenção:
 ```
-ecommerce/
-├── CARINHO/
+📦 ecommerce/
+├── 📂CARINHO/
 │   ├── assets/
 │   ├── boleto/
 │   ├── css/
 │   └── js/
-├── CONTATOS/
+├── 📂CONTATOS/
 │   ├── css/
 │   └── js/
 ├── css/
 ├── img/
 │   └── imgProd/
 ├── js/
-├── PRODUTOS/
+├── 📂PRODUTOS/
 │   ├── css/
 │   ├── detalhe/
 │   │   ├── css/
 │   │   └── js/
 │   └── js/
-└── SOBRE/
-    ├── css/
-    ├── politica_privacidade/
-    │   ├── css/
-    │   └── js/
-    └── js/
+└── 📂SOBRE/
+│   ├── css/
+│   ├── politica_privacidade/
+│   │   ├── css/
+│   │   └── js/
+│   └── js/
+└── 📜 README.md
 ```
 ---
 ### 💡 Decisões de Design e Estrutura
