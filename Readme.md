@@ -79,7 +79,7 @@ ecommerce/
 ```
 ### 👤 Autor
 
-Feito por **[PEDRO HENRIQUE RIGUETE DE OLIVEIRA MARTINS, RIQUI GABRIEL SILVA RAVI]**.
+Feito por **[PEDRO HENRIQUE RIGUETE DE OLIVEIRA MARTINS, RIQUI GABRIEL SALOMÃO LIRIO]**.
 
 Entre em contato ou veja outros projetos:
 
