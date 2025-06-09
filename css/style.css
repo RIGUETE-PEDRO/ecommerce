@@ -248,7 +248,7 @@ p {
   background: #b28e2f;
 }
 
-/* Firefox */
+/* barra de rolagem personalizada */
 html {
   scrollbar-color: #d4af37 #000000; /* polegar dourado, fundo preto */
   scrollbar-width: thin;
@@ -323,12 +323,12 @@ html {
   gap: 8px;
 }
 
-
+/*linha de divisoria dourada*/
 .linha-dourada {
   border-bottom: 0.2em solid #d4af37;
   padding: 10px;
 }
-
+/*responsavel pelo filtro*/
 .div9-filtro {
   display: flex;
   flex-direction: column;
@@ -352,9 +352,6 @@ html {
   }
 }
 
-/* Estilização do conteúdo do filtro */
-
-/* Estilização do conteúdo do filtro */
 
 .img-container {
   width: 100%;
@@ -452,7 +449,7 @@ html {
 .text {
   color: white;
 }
-
+/*letras que fica escrevendo e apagando*/
 .text-animation {
   font-family: "Domine", serif;
   font-size: 2.5rem;
@@ -473,7 +470,7 @@ html {
   gap: 2rem; /* Espaçamento entre os produtos */
   padding: 2rem 0;
 }
-
+/*fedback carrosel*/
 .feedback-card {
   background-color: #362c2c;
   border-radius: 1rem;
@@ -483,7 +480,7 @@ html {
   margin: auto;
   text-align: center;
 }
-
+/*imagem do carrocel de fedback*/
 .profile-pic {
   width: 80px;
   height: 80px;

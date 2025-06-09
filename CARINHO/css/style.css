@@ -19,57 +19,7 @@ h4 {
   color: #28a745; /* cor do carrinho (pode trocar) */
 }
 
-
-
-.card {
-  border-radius: 12px;
-  transition: box-shadow 0.2s ease-in-out;
-}
-
-.card:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-}
-
-.btn-minus,
-.btn-plus {
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.quantidade {
-  min-width: 24px;
-  text-align: center;
-  font-weight: 500;
-}
-
-.btn-delete {
-  margin-top: 0.5rem;
-  font-size: 14px;
-}
-
-.subtotal {
-  font-size: 15px;
-}
-
-.btn-warning {
-  background-color: #ffc107;
-  border: none;
-}
-
-.btn-warning:hover {
-  background-color: #e0a800;
-}
-
-.text-success {
-  font-weight: bold;
-  font-size: 18px;
-}
-
+/*quadrado preto de fundo*/
 .container-carrinho {
     max-width: 70em ;
     margin: 2rem auto;
@@ -81,16 +31,17 @@ h4 {
     border-radius: 12px;
     box-shadow: 0 0em 10em rgba(0, 0, 0, 1.7);
   }
+  /*botao de furmulario*/
 .form-control {
   background-color: #000;
   color: #d4af37;
 }
-
+/*botao de formulario quando clica nele*/
 .form-control::placeholder {
   background-color: #000;
   color: #95948f;
 }
-
+/*controle de fundo do inputs*/
 .form-control:focus {
   border-color: #d4af37;
   box-shadow: 0 0 0.25rem rgba(212, 175, 55, 0.25);
@@ -104,7 +55,7 @@ h4 {
   align-items: center;
   justify-content: center;
 }
-
+/*botao de finalizar pedido*/
 .button {
   margin-top: 4em;
   margin-bottom: 1em;
@@ -168,18 +119,6 @@ h4 {
   display: none;
 }
 
-@keyframes ring {
-  0% {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  100% {
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }
-}
 
 .wrapper {
   display: grid;
@@ -259,42 +198,26 @@ input:focus {
   align-items: flex-start; /* alinha à esquerda */
   gap: 4px; /* espaço entre nome e validade */
 }
-
+/*personalização do numero do cartao*/
 .number-card {
   font-size: 20px;
   letter-spacing: 2px;
   margin: 20px 0;
 }
-
+/*personalização do nome e data do cartao*/
 .name,
 .date {
   font-size: 14px;
 }
 
-.name {
-  padding: em;
-}
+
+/*personalização da rotação do cartão*/
 .rotate-card {
   position: absolute;
   top: 10px;
   right: 10px;
   cursor: pointer;
   font-size: 18px;
-}
-
-.status-security {
-  margin-top: 5em;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-}
-
-.card-container {
-  perspective: 1000px;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  position: relative;
 }
 
 .card-inner {
@@ -305,68 +228,7 @@ input:focus {
   transition: transform 0.8s;
 }
 
-.card-inner.flipped {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 16px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.card-front {
-  background: linear-gradient(135deg, #2c3e50, #4ca1af);
-  color: white;
-}
-
-.card-back {
-  background: linear-gradient(135deg, #3a3a3a, #5a5a5a);
-  color: white;
-}
-
-.content {
-  background: linear-gradient(135deg, #2c3e50, #4ca1af);
-}
-
-.form-container .box-form .box-card .bar {
-  height: 2.5rem;
-  background-color: var(--bodyColor);
-  margin-top: 1.25rem;
-}
-
-.cvv {
-  display: flex;
-  align-items: center;
-
-  color: #fff;
-  gap: 0.5rem;
-}
-
-.cvv .cvv-number {
-  height: 2.5rem;
-  width: 80%;
-  border-radius: 4px;
-  background-color: #d1d5db;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--bodyColor);
-
-  justify-content: flex-end;
-}
-
-
-
-
+/*personalização da div do cartao*/
 .card-container {
   width: 400px;
   height: 250px;
@@ -374,12 +236,11 @@ input:focus {
   margin: 20px auto;
 }
 
-
-
+/*personalização da div do cartao ao clicar*/
 .card-container:hover .card-inner {
   transform: rotateY(180deg);
 }
-
+/*personalização da frente do cartao e do fundo*/
 .card-front,
 .card-back {
   position: absolute;
@@ -432,7 +293,7 @@ input:focus {
   display: flex;
   flex-direction: column;
 }
-
+/*barra magnetica do cartao*/
 .magnetic-strip {
   background: black;
   height: 40px;
@@ -454,12 +315,6 @@ input:focus {
   border-radius: 4px;
 }
 
-.info-back {
-  margin-top: auto;
-  font-size: 0.9rem;
-  text-align: center;
-  opacity: 0.6;
-}
 
 
 
@@ -476,7 +331,6 @@ input:focus {
   height: 50px;
 }
 
-/* Linhas de assinatura */
 
 /* Caixa do CVV com estilo */
 .cvv-box {
@@ -494,7 +348,7 @@ input:focus {
   color: #bbb;
   user-select: none;
 }
-
+/*parte do cod de segurança*/
 .cvv {
   background: #f3f3f3;
   width: 100%;
@@ -531,30 +385,31 @@ input:focus {
   border-bottom: 1px solid #ccc;
   padding: 15px 0;
 }
-
+/*img do item do carrinho*/
 .item-carrinho img {
   width: 80px;
   height: 80px;
   object-fit: cover;
   margin-right: 15px;
   border-radius: 8px;
+  border: white solid 1px;
 }
-
+/*informações do produto*/
 .info-produto {
   flex: 1;
 }
-
+/*estilo no nome do prod*/
 .nome-produto {
   font-weight: bold;
   margin-bottom: 5px;
 }
-
+/*controle de quantidade*/
 .controles {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
+/*estilo do botao de quantidade*/
 .controles button {
   width: 30px;
   height: 30px;
@@ -564,12 +419,12 @@ input:focus {
   border-radius: 5px;
   cursor: pointer;
 }
-
+/*estilo do preco do produto*/
 .preco {
   width: 100px;
   text-align: right;
 }
-
+/*estio do remover produto*/
 .remover {
   background-color: red;
   color: white;
@@ -582,97 +437,24 @@ input:focus {
 .signature-box .cvv {
   font-weight: bold;
 }
-
+/*deixar o boleto e o cartao escondido como padrao*/
 #cartao-container,
 #botao-boleto {
   display: none;
 }
 
-.feedback-card {
-  background-color: #362c2c;
-  border-radius: 1rem;
-  padding: 2rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
-}
 
-.profile-pic {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #060606;
-  margin-bottom: 1rem;
-}
-
-.feedback-author {
-  font-weight: bold;
-  margin-top: 0.5rem;
-  color: #ffffff;
-}
-
-.feedback-role {
-  font-size: 0.9rem;
-  color: #efefef;
-}
-
+/*personalizao do email do footer*/
 #newsletter1{
   background-color: white;
 }
 
-
+/*personalizao do email do footer*/
 .form-control::placeholder{
   background-color: white;
 }
 
 
-.button-boleto{
-  margin-top: 1em;
-  margin-bottom: 1em;
-  min-width: 300px;
-  min-height: 60px;
-  display: inline-flex;
-  font-family: "Nunito", sans-serif;
-  font-size: 22px;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1.3px;
-  font-weight: 700;
-  color: #313133;
-  background: #11fa09;
-  background: linear-gradient(
-    90deg,
-    rgb(241, 255, 84) 0%,
-    rgb(192, 152, 51) 100%
-  );
-  border: none;
-  border-radius: 1000px;
-  box-shadow: 12px 12px 24px rgba(206, 103, 6, 0.64);
-  transition: all 0.3s ease-in-out 0s;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-  padding: 10px;
-}
-
-.button-boleto::before {
-  content: "";
-  border-radius: 1000px;
-  min-width: calc(300px + 12px);
-  min-height: calc(60px + 12px);
-  border: 6px solid #d78a0e;
-  box-shadow: 0 0 60px rgba(238, 246, 2, 0.64);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all 0.3s ease-in-out 0s;
-}
 
 .button-boleto:hover,
 .button-boleto:focus {
@@ -745,22 +527,3 @@ input:focus {
   text-decoration: none; /* remove sublinhado do link */
   user-select: none;
 }
-
-.cart-button-shover {
-  position: relative;
-  display: inline-flex; /* Flex para alinhar ícone e badge */
-  align-items: center;
-  gap: 6px;
-  background-color: transparent;
-  border: 1px solid #d4af37; /* borda dourada */
-  color: #d4af37; /* texto dourado */
-  padding: 5px 10px;
-  font-size: 16px;
-  border-radius: 4px;
-  line-height: 1.5;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  text-decoration: none; /* remove sublinhado do link */
-  user-select: none;
-}
-
