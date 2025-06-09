@@ -65,3 +65,7 @@ body {
     .btn-comprar:hover {
   background-color: #146c43;
 }
+
+main{
+  margin-left: 5em;
+}

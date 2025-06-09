@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const emailInput = document.getElementById("newsletter1");
+    const confirmarBtn = document.getElementById("confirmarEmail");
+
+    confirmarBtn.addEventListener("click", function () {
+      const email = emailInput.value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (email === "") {
+        alert("Por favor, digite seu e-mail.");
+      } else if (!emailRegex.test(email)) {
+        alert("E-mail inválido. Tente novamente.");
+      } else {
+        alert("E-mail cadastrado com sucesso! 🌱✨");
+        emailInput.value = "";
+      }
+    });
+  });
 document.addEventListener('DOMContentLoaded', function() {
   // Seleciona todos os botões "Comprar"
   const buyButtons = document.querySelectorAll('.btn-comprar');
@@ -96,3 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             }, 800);
         });
+
+         
+  
