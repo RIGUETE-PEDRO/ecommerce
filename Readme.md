@@ -56,6 +56,7 @@ Build: Ferramentas como Vite ou Webpack podem otimizar performance.
 
 Testes: Pode-se utilizar Jest com Testing Library para testes unitários.
 
+---
 ### 🏛️ Estrutura de Pastas
 
 A estrutura de pastas do projeto está organizada da seguinte forma para facilitar a manutenção:
