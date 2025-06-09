@@ -50,32 +50,33 @@ E pronto! O site estará funcionando localmente.
 ### 🏛️ Estrutura de Pastas
 
 A estrutura de pastas do projeto está organizada da seguinte forma para facilitar a manutenção:
-├───.vscode
-├───CARINHO
-│   ├───assets
-│   ├───boleto
-│   ├───css
-│   └───js
-├───CONTATOS
-│   ├───css
-│   └───js
-├───css
-├───img
-│   └───imgProd
-├───js
-├───PRODUTOS
-│   ├───css
-│   ├───detalhe
-│   │   ├───css
-│   │   └───js
-│   └───js
-└───SOBRE
-    ├───css
-    ├───detalhe
-    │   ├───css
-    │   └───js
-    └───js
-
+'''
+ecommerce/
+├── CARINHO/
+│   ├── assets/
+│   ├── boleto/
+│   ├── css/
+│   └── js/
+├── CONTATOS/
+│   ├── css/
+│   └── js/
+├── css/
+├── img/
+│   └── imgProd/
+├── js/
+├── PRODUTOS/
+│   ├── css/
+│   ├── detalhe/
+│   │   ├── css/
+│   │   └── js/
+│   └── js/
+└── SOBRE/
+    ├── css/
+    ├── detalhe/
+    │   ├── css/
+    │   └── js/
+    └── js/
+'''
 ### 👤 Autor
 
 Feito por **[PEDRO HENRIQUE RIGUETE DE OLIVEIRA MARTINS, RIQUI GABRIEL SILVA RAVI]**.
