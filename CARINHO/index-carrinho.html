@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<!-- Declaração do documento HTML5, configuração de codificação UTF-8, metadados para responsividade, tema de cor, favicon e importação de estilos CSS (Bootstrap, estilos personalizados e fontes do Google). -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,11 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet" />
     <meta nome="theme-color" content="#000000">
+    <!-- acho que é "name" -->
 </head>
 
 <body>
-
+    <!-- Cabeçalho com barra de navegação responsiva, incluindo logotipo, links de navegação e ícone de carrinho, utilizando Bootstrap para layout e interatividade. -->
     <header>
 
         <nav class="navbar navbar-expand-lg" style="background-color: #000000; border-bottom: 1px solid #D4AF37;">
@@ -26,13 +28,13 @@
 
 
 
-                <div class="navbar-section center">
+                <!-- <div class="navbar-section center"> -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"
                             style="filter: invert(75%) sepia(90%) saturate(500%) hue-rotate(15deg);"></span>
                     </button>
-                </div>
+                <!-- </div> -->
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
@@ -58,6 +60,8 @@
             </div>
         </nav>
     </header>
+
+    <!-- Seção principal com formulário para dados pessoais, endereço de entrega, opções de pagamento e resumo do pedido, estilizado com fundo preto e bordas douradas. -->
     <main>
         <div class="formulario">
             <div class="container-carrinho mt-5 mb-5">
@@ -239,7 +243,7 @@
                                         </div>
                                     </div>
                                     <div class="wrap">
-                                        <button class="button mb-4">finalizar pedido</a>
+                                        <button class="button mb-4">finalizar pedido</button>
                                     </div>
                                     <!-- Link para download do boleto -->
 
@@ -271,10 +275,11 @@
     </main>
 
 
-    <!-- Rodapé -->
-    <section>
+    <!-- Linha divisória  -->
         <div class="linha-divisao">
         </div>
+
+        <!-- Rodapé, contendo links para páginas principais, redes sociais, formulário de newsletter e direitos autorais, organizado em colunas responsivas com Bootstrap. -->    
         <div class="container">
             <footer class="py-5">
                 <div class="row">
@@ -304,7 +309,7 @@
                                     class="nav-link p-0 text-body-secondary">Sustentabilidade</a></li>
                             <li class="nav-item2 mb-2"><a href="https://www.instagram.com/p/DKY1YHItT7D/"
                                     class="nav-link p-0 text-body-secondary">Faça parte</a></li>
-            <li class="nav-item2 mb-2"><a href="../CARINHO/index-carrinho.html" class="nav-link p-0 text-body-secondary">Politica de privacidade </a></li>
+            <li class="nav-item2 mb-2"><a href="../SOBRE/detalhe/detalhe.html" class="nav-link p-0 text-body-secondary">Politica de privacidade </a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-2 mb-3">
@@ -338,14 +343,14 @@
       </div>
             </footer>
         </div>
-    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <!-- Importação de bibliotecas externas (jsPDF, QRCode, JsBarcode) e scripts locais para interatividade do Bootstrap, validação de formulários, gerenciamento do carrinho e geração de boleto/QR code. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> <!--Esse link ta = ali em baixo-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="../js/bootstrap.bundle.js"></script>
     <script src="../js/js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>   <!--Esse link ta repitido acho-->
     <script src="js/CARRINHO.js"></script>
     <script src="js/script.js"></script>
 

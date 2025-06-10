@@ -1,7 +1,4 @@
-.card-text {
-  color: green;
-}
-
+/* Estiliza os cartões de produtos com layout flexível, bordas arredondadas, sombra e efeitos de hover para interação. */
 .product-card {
   height: 100%; /* faz o card ocupar toda a altura da coluna */
   display: flex;
@@ -18,6 +15,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* Estiliza o contêiner das imagens dos produtos, garantindo centralização e controle de overflow. */
 .img-container {
   width: 100%;
   overflow: hidden;
@@ -26,23 +24,36 @@
   justify-content: center;
 }
 
+/* Ajusta o tamanho e o comportamento das imagens dos produtos dentro dos cartões. */
 .product-img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
 
+/* Organiza o conteúdo do cartão (título, preço, botões) com layout flexível e texto centralizado. */
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+
+  padding: 20px;
+  text-align: center; /* Centraliza o texto para um visual mais limpo */
 }
 
+/* Corpo do Card   //// joguei acima.
+/* .card-body {
+  padding: 20px;
+  text-align: center; /* Centraliza o texto para um visual mais limpo
+} */
+
+/* Estiliza o título do produto com tamanho, peso e cor para destaque. */
 .card-title {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  font-size: 1.1rem; /* Tamanho da fonte do título */
+  font-weight: 600; /* Deixa o título um pouco mais forte (semi-bold) */
+  color: #333; /* Cor escura, mas não preto puro */
+  margin-bottom: 8px;
 }
 
 .card-text {
@@ -50,15 +61,15 @@
   margin-bottom: auto;
 }
 
-/* cor do botao adquirir. */
+/* Estiliza o botão 'Adquirir' com cor de fundo verde e efeito hover.
 .btn-comprar {
-  background-color: #198754;
-  color: #fff;
+  background-color: #f705a6;
+  color: #fae902;
 }
 
 .btn-comprar:hover {
-  background-color: #146c43;
-}
+  background-color: #130b7e;
+} */
 
 /*stilo dos card dos produtos*/
 .product-card {
@@ -74,29 +85,18 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); /* Aumenta a sombra para destacar */
 }
 
-/* Corpo do Card*/
-.card-body {
-  padding: 20px;
-  text-align: center; /* Centraliza o texto para um visual mais limpo */
-}
 
-/* Título do Produto  */
-.card-title {
-  font-size: 1.1rem; /* Tamanho da fonte do título */
-  font-weight: 600; /* Deixa o título um pouco mais forte (semi-bold) */
-  color: #333; /* Cor escura, mas não preto puro */
-  margin-bottom: 8px;
-}
+
 
 /*Texto do Preço e Hashtag*/
 .card-text {
   font-size: 1.2rem; /* Aumenta o tamanho do preço para destaque */
   font-weight: 700; /* Deixa o preço em negrito */
-  color: #2e7d32; /* Uma cor rosa/magenta para o preço */
+  color: #2e7d32; 
   margin-bottom: 20px;
 }
 
-/*Estilização dos Botões dentro do Card */
+/* Personaliza os botões dentro dos cartões com formato de pílula, fontes bold e efeitos de hover. */
 .product-card .btn {
   border-radius: 50px; /* Deixa os botões em formato de pílula */
   font-weight: bold;
@@ -113,7 +113,7 @@
 }
 
 .product-card .btn-primary:hover {
-  background-color: #6c757d;
+  background-color: #d67b03;
   color: #fff;
 }
 
@@ -126,11 +126,11 @@
 
 .product-card .btn-success:hover {
   background-color: #276b2a; /* Um tom um pouco mais escuro para o hover */
-  border-color: #1a511d;
+  border-color: #aa6702;
   transform: scale(1.05); /* Aumenta um pouco o botão no hover */
 }
 
-/* Media Query para telas entre 800px e 1000px de largura */
+/* Ajusta o layout das colunas para 3 por linha em telas de 800px a 1200px. */
 @media (min-width: 800px) and (max-width: 1200px) {
   /* Se o seu HTML usa 'col-md-3' (que normalmente resulta em 4 por linha),
     nós vamos forçar ele a se comportar como se fosse 'col-md-4' (3 por linha).

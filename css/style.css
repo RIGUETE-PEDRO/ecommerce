@@ -88,12 +88,12 @@
   background-color: #f2f2f2; /* Cor de fundo cinza claro */
 }
 
-/* Divide a navbar em seções */
+/* Divide a navbar em seções 
 .navbar-section {
-  flex: 1; /* Cada parte ocupa 1 fração */
-  display: flex; /* Flexbox */
-  align-items: center; /* Alinha itens verticalmente */
-}
+  flex: 1;  Cada parte ocupa 1 fração 
+  display: flex;  Flexbox 
+  align-items: center;  Alinha itens verticalmente 
+} */
 
 
 
@@ -326,7 +326,7 @@ html {
 /*linha de divisoria dourada*/
 .linha-dourada {
   border-bottom: 0.2em solid #d4af37;
-  padding: 10px;
+  /* padding: 10px;  parece qe nao ta sendo usado*/
 }
 /*responsavel pelo filtro*/
 .div9-filtro {
@@ -524,6 +524,7 @@ html {
 
 
 /* responsavel pelo footer*/
+/* .nav-item2 acho que esta sendo usado pra nada no cod abaixo */
 .nav-item2 .nav-link {
   color: #d4af37 !important; /* Cor dourada do texto */
   padding: 1em 1em; /* Espaço interno (padding) ao redor do texto */
@@ -547,7 +548,7 @@ html {
 .remover{
   margin-left: 1em;
 }
-
+/* o que isso faz? */
 
 
 

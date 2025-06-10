@@ -1,4 +1,4 @@
-/* --- Estilos para os cards de produtos --- */
+/* Estiliza cartões de produtos com bordas, sombra e efeitos de hover (não utilizado nesta página).
 .product-card {
   border: none;
   transition: box-shadow 0.3s ease;
@@ -8,26 +8,29 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Container da imagem: garante que o zoom fique restrito dentro do card */
+/* Container da imagem: garante que o zoom fique restrito dentro do card
+/* Configura o contêiner de imagens de produtos para evitar overflow (não utilizado nesta página). 
 .img-container {
   overflow: hidden;
 }
 
-/* Imagem do produto com efeito de zoom */
+/* Imagem do produto com efeito de zoom 
+/* Aplica efeito de zoom às imagens de produtos com comportamento de cursor (não utilizado nesta página). 
 .product-img {
   transition: transform 0.3s ease;
   width: 100%;
-  height: 200px; /* Ajuste conforme necessário */
+  height: 200px; /* Ajuste conforme necessário
   object-fit: cover;
   cursor: zoom-in;
-}
+} */
 
-.img-container:hover .product-img {
+/* .img-container:hover .product-img {
   transform: scale(1.15);
-}
+} */
 
 /* Personalização dos títulos e preços */
-.card-title {
+/* Estiliza títulos e textos de preços em cartões de produtos (não utilizado nesta página). */
+/* .card-title {
   font-family: "Domine", serif;
   font-weight: bold;
   color: #333;
@@ -36,7 +39,7 @@
 .card-text {
   font-size: 1rem;
   color: #555;
-}
+} */
 
 /* Botões de ação  confirmar - do email, do footer.
 ----aparentemente é inutil, ta sobrescrevendo outro da principal. pode tirar acho
@@ -54,12 +57,15 @@
   color: #000;
 } */
 
-/*   atoa aqui......
 
+/*   atoa aqui......
 Botão de comprar (btn-success) já utiliza o estilo padrão do Bootstrap, mas você pode ajustar se necessário
 input {
 } */
 
+/* --------------------------------------------------------------------------------------------------- */
+
+/* Aplica uma imagem de fundo à seção principal do formulário com opacidade e bordas arredondadas. */
 .fundo {
   /* opacidade do fundo */
   background-image: url("../../img/contatofundo.jpg"); /* opacidade do fundo */
@@ -74,6 +80,7 @@ input {
   /* texto em preto (pode ajustar) */
 }
 
+/* Estiliza o contêiner do formulário com fundo preto, borda dourada e sombra para destaque. */
 .fundo .form {
   max-width: 800px;
   margin: 2rem auto;
@@ -86,11 +93,13 @@ input {
   box-shadow: 0 0em 10em rgba(0, 0, 0, 1.7);
 }
 
+/* Define a cor dourada para rótulos e parágrafos do formulário. */
 .form-label,
 .mb-4 {
   color: #d4af37;
 }
 
+/* Estiliza os campos de formulário com fundo preto, texto dourado e efeitos de foco. */
 .form-control {
   background-color: #000;
   color: #d4af37;
@@ -107,7 +116,10 @@ input {
   background-color: #000;
   color: #d4af37;
 }
+/* acho que isso ta afetando o  footer ai o texro ta saindo preto la, e a borda amarela. tentei resolver, mas nao foi*/
 
+
+/* Estiliza o botão de envio do formulário de contato com gradiente, sombra e efeitos interativos de hover. */
 .wrap {
   height: 100%;
   display: flex;
@@ -141,7 +153,6 @@ input {
   position: relative;
   padding: 10px;
   }
-
 
 .button::before {
 content: '';
@@ -190,12 +201,13 @@ content: '';
 }
 
 
-
+/* É AQUI QUE MEXE NA COR E NAS COISAS LA FO FOOTER, DA PARTE DO EMAIL */
  #newsletter1{
   background-color: white;
-  color: rgb(0, 0, 0);
+  color: rgb(83, 79, 79);
  }
  #newsletter1::placeholder{
   background-color: white;
-  color: rgb(0, 0, 0);
+  color: rgb(22, 19, 19);
+  border-color: #fd3d0d;
  }

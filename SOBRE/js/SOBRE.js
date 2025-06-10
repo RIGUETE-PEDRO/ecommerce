@@ -1,3 +1,4 @@
+// Revela elementos com a classe '.fade-in' ao rolar ou carregar a página, adicionando/removendo a classe '.visible' com base na posição na viewport.
 function revealOnScroll() {
   const elements = document.querySelectorAll('.fade-in');
 
@@ -18,8 +19,8 @@ window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
 
-// mensagem de confirmaçao do Newsletter (geral)
-  
+
+// Valida o formulário de newsletter ao clicar no botão, verificando o formato do e-mail e exibindo mensagens de feedback ao usuário.
   document.addEventListener("DOMContentLoaded", function () {
     const emailInput = document.getElementById("newsletter1");
     const confirmarBtn = document.getElementById("confirmarEmail");
@@ -38,6 +39,3 @@ window.addEventListener('load', revealOnScroll);
       }
     });
   });
-
-
-  // falta replicar nos outros. so estou deixando aqui por enquanto pois tem que ver se tu acha que ta certo

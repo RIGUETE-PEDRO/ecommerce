@@ -1,12 +1,12 @@
-/* Fonte luxo para toda a página */
+/* Configurações globais do documento, definindo fonte padrão (Domine), cor de fundo escura, margem zero e cor do texto clara. */
 body {
   font-family: 'Domine', serif;
   background: #2F2F2F;
   margin: 0;
-  color: #fdfdfd; /* texto padrão escuro para boa leitura */
+  color: #fdfdfd;
 }
 
-/* Títulos */
+/* Estilização de títulos com peso bold, cor dourada e espaçamento elegante para destaque visual. */
 h1, h2, h3, h4 {
   font-weight: 700;
   color: #D4AF37; /* dourado */
@@ -14,7 +14,7 @@ h1, h2, h3, h4 {
   letter-spacing: 0.05em; /* toque elegante */
 }
 
-/* Parágrafos */
+/* Estilização de parágrafos com peso regular, tamanho ajustado e cor clara para boa legibilidade. */
 p {
   font-weight: 400;
   font-size: 1.1rem;
@@ -23,8 +23,8 @@ p {
   margin-bottom: 1em;
 }
 
-/* Botões estilo luxo */
-.btn-luxo {
+/* Estilização de botões com aparência de luxo, com borda dourada, fundo transparente e efeito hover. */
+/* .btn-luxo {
   font-family: 'Playfair Display', serif;
   background-color: transparent;
   border: 2px solid #D4AF37;
@@ -41,8 +41,10 @@ p {
   background-color: #D4AF37;
   color: #000;
   font-weight: 700;
-}
+}     
+  inutil aparentemente, mas confirma ai*/
 
+/* Animação fade-in para elementos, com transição suave de opacidade e deslocamento vertical. */
 .fade-in {
     opacity: 0;
     transform: translateY(1em);
@@ -54,6 +56,7 @@ p {
     transform: translateY(1em);
   }
 
+  /* Estilização do contêiner principal da página Sobre, com largura limitada, borda dourada, fundo preto e sombra para destaque. */
   .container-sobre {
     max-width: 800px;
     margin: 2rem auto;
@@ -67,22 +70,24 @@ p {
     
   }
 
-.principal {
+  /* Layout flexível para organizar texto e logo em colunas, com posicionamento sticky para a logo. */
+/* .principal {
   display: flex;
   gap: 2rem;
-  align-items: flex-start;
-  /* definir uma altura mínima para o container permitir sticky funcionar */
+  align-items: flex-start;      /* definir uma altura mínima para o container permitir sticky funcionar
   min-height: 600px;
-}
+} 
+  inutil aparentemente, confirme*/
 
-.texto {
+/* .texto {
   flex: 1 1 600px;
-}
+} 
+  inutil aparentemente, confirme*/
 
-.logo {
+/* .logo {
   flex: 0 0 250px;
   position: sticky;
-  top: 20px; /* distância do topo da viewport */
+  top: 20px;     /* distância do topo da viewport
   align-self: flex-start;
 }
 
@@ -90,5 +95,68 @@ p {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
+} 
+  inutil aparentemente, confirme*/
+
+
+
+
+
+  /* ===============================================================================
+  
+                        ficaria assim o jeito certo, sem essas coisas erradas
+                                                  =
+
+  /* Configurações globais do documento, definindo fonte padrão (Domine), cor de fundo escura, margem zero e cor do texto clara.
+body {
+  font-family: 'Domine', serif;
+  background: #2F2F2F;
+  margin: 0;
+  color: #fdfdfd; /* texto padrão escuro para boa leitura 
 }
+
+/* Estilização de títulos com peso bold, cor dourada e espaçamento elegante para destaque visual. 
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #D4AF37; /* dourado 
+  margin-bottom: 0.5em;
+  letter-spacing: 0.05em; /* toque elegante 
+}
+
+/* Estilização de parágrafos com peso regular, tamanho ajustado e cor clara para boa legibilidade. 
+p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ede7e7;
+  margin-bottom: 1em;
+}
+
+/* Animação fade-in para elementos, com transição suave de opacidade e deslocamento vertical. 
+.fade-in {
+  opacity: 0;
+  transform: translateY(1em);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(1em);
+}
+
+/* Estilização do contêiner principal da página Sobre, com largura limitada, borda dourada, fundo preto e sombra para destaque. 
+.container-sobre {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Domine', serif;
+  color: #ffffff;
+  background-color: black;
+  border: #D4AF37 2px solid;
+  border-radius: 12px;
+  box-shadow: 0 0em 10em rgba(0, 0, 0, 1.7);
+}
+  
+  
+  */
 
