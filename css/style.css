@@ -66,7 +66,6 @@
 /* Estilização geral do corpo da página */
 
 
-
 .search-container {
   display: flex; /* Flexbox */
   width: 100%; /* Largura total */
@@ -557,3 +556,4 @@ html {
   text-decoration: none;
   color: white;
 }
+
