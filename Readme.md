@@ -26,8 +26,8 @@ As seguintes ferramentas e tecnologias foram usadas na construção deste projet
 -   **JavaScript (Vanilla JS):** Para a interatividade do cliente, como a ativação das animações de clique e a lógica do carrinho.
 -   **Font Awesome:** Para a utilização de ícones vetoriais em toda a aplicação.
 -   **Google Fonts:** Para fontes personalizadas e uma melhor tipografia.
--   **Codepen**       um site com alguns css prontos para adaptar ao cod.
--    **Chatgpt**           trabalhou na geração de imagens de alta qualidade, direcionado para nossa marca.
+-   **Codepen:**       um site com alguns css prontos para adaptar ao cod.
+-    **Chatgpt:**           trabalhou na geração de imagens de alta qualidade, direcionado para nossa marca.
 
 ### 📁 Como Rodar o Projeto Localmente
 
