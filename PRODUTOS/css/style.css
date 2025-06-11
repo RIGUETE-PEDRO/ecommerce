@@ -42,12 +42,6 @@
   text-align: center; /* Centraliza o texto para um visual mais limpo */
 }
 
-/* Corpo do Card   //// joguei acima.
-/* .card-body {
-  padding: 20px;
-  text-align: center; /* Centraliza o texto para um visual mais limpo
-} */
-
 /* Estiliza o título do produto com tamanho, peso e cor para destaque. */
 .card-title {
   font-size: 1.1rem; /* Tamanho da fonte do título */
@@ -61,15 +55,7 @@
   margin-bottom: auto;
 }
 
-/* Estiliza o botão 'Adquirir' com cor de fundo verde e efeito hover.
-.btn-comprar {
-  background-color: #f705a6;
-  color: #fae902;
-}
 
-.btn-comprar:hover {
-  background-color: #130b7e;
-} */
 
 /*stilo dos card dos produtos*/
 .product-card {

@@ -81,17 +81,7 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* .btn-agora .fas {
-  margin-right: 10px;
-  transition: transform 0.3s ease;
-}
 
-.btn-agora:hover .fas {
-  transform: rotate(-15deg);
-} 
-  sem utilidade aparentemente, mas nao tenho certeza. ---- nao sei se voce tlvz quer usar*/
-
-/* Centralização do texto do nome do produto para destaque visual. */
 .produto-nome{
   text-align: center;
 }
