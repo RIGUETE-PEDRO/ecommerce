@@ -27,7 +27,7 @@ As seguintes ferramentas e tecnologias foram usadas na construção deste projet
 -   **Font Awesome:** Para a utilização de ícones vetoriais em toda a aplicação.
 -   **Google Fonts:** Para fontes personalizadas e uma melhor tipografia.
 -   **codepen**       um site com alguns css prontos para adaptar ao cod.
-    **gpt**           trabalhou na geração de imagens de alta qualidade com visão para nossa marca.
+-    **gpt**           trabalhou na geração de imagens de alta qualidade com visão para nossa marca.
 
 ### 📁 Como Rodar o Projeto Localmente
 
