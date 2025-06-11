@@ -116,6 +116,7 @@ Todas as decisões foram baseadas em responsividade (mobile-first), fluidez de n
 ### 🌟 Inspiração para o Projeto
 A inspiração para o EcoBelle veio tanto da nossa criatividade quanto da observação de grandes marcas do setor de beleza, como Natura, Avon e Jequiti. Exploramos também diversas páginas na internet com elementos visuais e interações que nos chamaram a atenção. Adaptamos essas referências ao nosso estilo, buscando sempre inovar. A escolha das cores — preto e amarelo — foi pensada para transmitir elegância, sofisticação e um sentimento de exclusividade. Queríamos que o usuário se sentisse especial ao navegar pela loja.
 
+---
 ### 👤 Autores
 
 Feito por **[PEDRO HENRIQUE RIGUETE DE OLIVEIRA MARTINS, RIQUI GABRIEL SALOMÃO LIRIO]**.
