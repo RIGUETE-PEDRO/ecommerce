@@ -57,7 +57,6 @@
   color: #000;
 } */
 
-
 /*   atoa aqui......
 Botão de comprar (btn-success) já utiliza o estilo padrão do Bootstrap, mas você pode ajustar se necessário
 input {
@@ -75,7 +74,7 @@ input {
   padding-top: 1em;
   border-radius: 16px; /* cantos arredondados */
   color: #000;
-  
+
   margin: 0;
   /* texto em preto (pode ajustar) */
 }
@@ -118,7 +117,6 @@ input {
 }
 /* acho que isso ta afetando o  footer ai o texro ta saindo preto la, e a borda amarela. tentei resolver, mas nao foi*/
 
-
 /* Estiliza o botão de envio do formulário de contato com gradiente, sombra e efeitos interativos de hover. */
 .wrap {
   height: 100%;
@@ -133,7 +131,7 @@ input {
   min-width: 300px;
   min-height: 60px;
   display: inline-flex;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 22px;
   align-items: center;
   justify-content: center;
@@ -143,7 +141,11 @@ input {
   font-weight: 700;
   color: #313133;
   background: #11fa09;
-  background: linear-gradient(90deg, rgb(241, 255, 84) 0%, rgb(192, 152, 51) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(241, 255, 84) 0%,
+    rgb(192, 152, 51) 100%
+  );
   border: none;
   border-radius: 1000px;
   box-shadow: 12px 12px 24px rgba(206, 103, 6, 0.64);
@@ -152,10 +154,10 @@ input {
   outline: none;
   position: relative;
   padding: 10px;
-  }
+}
 
 .button::before {
-content: '';
+  content: "";
   border-radius: 1000px;
   min-width: calc(300px + 12px);
   min-height: calc(60px + 12px);
@@ -166,22 +168,21 @@ content: '';
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: all .3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.button:hover, 
+.button:hover,
 .button:focus {
   color: #313133;
   transform: translateY(-6px);
 }
 
-.button:hover::before, 
+.button:hover::before,
 .button:focus::before {
   opacity: 1;
 }
 
-
-.button:hover::after, 
+.button:hover::after,
 .button:focus::after {
   animation: none;
   display: none;
@@ -200,14 +201,13 @@ content: '';
   }
 }
 
-
 /* É AQUI QUE MEXE NA COR E NAS COISAS LA FO FOOTER, DA PARTE DO EMAIL */
- #newsletter1{
+#newsletter1 {
   background-color: white;
   color: rgb(83, 79, 79);
- }
- #newsletter1::placeholder{
+}
+#newsletter1::placeholder {
   background-color: white;
   color: rgb(22, 19, 19);
   border-color: #fd3d0d;
- }
+}

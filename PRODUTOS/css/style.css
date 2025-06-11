@@ -85,14 +85,11 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); /* Aumenta a sombra para destacar */
 }
 
-
-
-
 /*Texto do Preço e Hashtag*/
 .card-text {
   font-size: 1.2rem; /* Aumenta o tamanho do preço para destaque */
   font-weight: 700; /* Deixa o preço em negrito */
-  color: #2e7d32; 
+  color: #2e7d32;
   margin-bottom: 20px;
 }
 
