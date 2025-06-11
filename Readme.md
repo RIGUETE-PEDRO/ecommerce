@@ -12,7 +12,7 @@ Este projeto foi desenvolvido com diversas funcionalidades modernas para criar u
 -   **Botões de Ação Personalizados:** Botões com gradientes, animações e ícones para uma chamada de ação (CTA) mais eficaz.
 -   **Animação de "Adicionar ao Carrinho":** Feedback visual instantâneo com um carrinho que "corre" sobre o botão ao ser clicado.
 -   **Layout Flexível:** O número de produtos por linha se ajusta automaticamente dependendo do tamanho da tela.
--   **no carrinho temos diversas formas de pagamento e todas foram personalizadas pensado em trazer a melho experiencia para os cliente**
+-   **Carrinho:** No carrinho temos diversas formas de pagamento e todas foram personalizadas pensado em trazer a melhor experiencia para os clientes
 
 ---
 
