@@ -1,6 +1,6 @@
 /* Configurações globais do documento, definindo a fonte padrão (Domine) e cor do texto, além de remover margens. */
 body {
-  font-family: 'Domine', serif;
+  font-family: "Domine", serif;
   margin: 0;
   color: #fdfdfd;
 }

@@ -1,23 +1,4 @@
 
-/* Estiliza o campo de seleção de país com fundo branco e opções em fundo preto com texto branco (não utilizado). */
-/* #country {
-  background-color: #fff;
-  color: #000;
-}
-                                      NAO SEI PRA QUE TA SENDO USADO
-/* opções da lista 
-#country option {
-  background-color: #000; /* fundo preto 
-  color: #fff; /* texto branco 
-} */
-
-
-/* Centraliza títulos h4 com tamanho de fonte personalizado. */
-/* h4 {
-  text-align: center;
-  font-size: 22px;
-} */
-
 /* Estiliza o ícone no título do pedido com margem e cor verde. */
 .titulo-pedido i {
   margin-right: 10px;
@@ -220,14 +201,6 @@ input:focus {
 }
 
 
-/* personalização da rotação do cartão   .. ...nao usado acho
-.rotate-card {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 18px;
-} */
 
 
 .card-inner {
@@ -268,33 +241,6 @@ input:focus {
   justify-content: space-between;
 }
 
-/* Frente */
-
-/* .card-logo {
-  font-weight: 700;
-  font-size: 1.8rem;
-  text-align: right;
-}
-
-.card-number {
-  font-size: 1.6rem;
-  letter-spacing: 3px;
-  margin: 20px 0;
-} */
-
-/* .card-info {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-.card-info label {
-  font-size: 0.7rem;
-  opacity: 0.7;
-  margin-bottom: 4px;
-  display: block;
-} */
 
 /* Verso */
 .card-back {
@@ -317,17 +263,6 @@ input:focus {
   align-items: center;
   margin-top: 20px;
 }
-
-/* .signature {
-  background: white;
-  width: 70%;
-  height: 40px;
-  border-radius: 4px;
-} */
-
-
-
-
 
 /* Área da assinatura com textura */
 .signature-box {
@@ -513,18 +448,7 @@ input:focus {
   transform: rotateY(180deg);
 }
 
-/* frente do cartão */
-/* .card-content > .card-front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  background: linear-gradient(135deg, #4d4d4d, #222);
-  color: white;
-  border-radius: 15px;
-  padding: 20px;
-  box-sizing: border-box;
-} */
+
 
 /* verso do cartão */
 /* Estiliza o botão de carrinho na navbar com borda dourada e efeitos de hover. */

@@ -87,14 +87,6 @@
   background-color: #f2f2f2; /* Cor de fundo cinza claro */
 }
 
-/* Divide a navbar em seções 
-.navbar-section {
-  flex: 1;  Cada parte ocupa 1 fração 
-  display: flex;  Flexbox 
-  align-items: center;  Alinha itens verticalmente 
-} */
-
-
 
 
 /* Botão de menu hamburger (mobile) */
