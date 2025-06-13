@@ -64,7 +64,6 @@ A estrutura de pastas do projeto está organizada da seguinte forma para facilit
 📦 ecommerce/
 ├── 📂CARINHO/
 │   ├── assets/
-│   ├── boleto/
 │   ├── css/
 │   └── js/
 ├── 📂CONTATOS/
@@ -82,11 +81,11 @@ A estrutura de pastas do projeto está organizada da seguinte forma para facilit
 │   └── js/
 |── 📂SOBRE/
 │   ├── css/
-│   ├── politica_privacidade/
-│   │   ├── css/
-│   │   └── js/
-│   └── js/
-|
+|   ├── js/
+│   └── politica_privacidade/
+│       ├── css/
+│       └── js/
+│   
 └── 📜 README.md
 ```
 ---
@@ -125,7 +124,7 @@ Entre em contato ou veja outros projetos:
 
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RIGUETE-PEDRO)
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gabriel-silva-ravi)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gabriel-dev-work)
 ---
 
 ### 📝 Licença
