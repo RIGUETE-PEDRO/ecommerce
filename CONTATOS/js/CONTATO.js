@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Feedback simples para o usuário
     alert("Obrigado, " + nome + "! Sua mensagem foi enviada com sucesso.");
 
-    // Opcional: Limpa o formulário após o envio
+    
     form.reset();
   });
 });

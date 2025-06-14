@@ -9,10 +9,10 @@
   background-repeat: no-repeat; /* evita repetição */
   padding-top: 1em;
   border-radius: 16px; /* cantos arredondados */
-  color: #000;
+  color: #000; /*texto em preto*/
 
   margin: 0;
-  /* texto em preto (pode ajustar) */
+
 }
 
 /* Estiliza o contêiner do formulário com fundo preto, borda dourada e sombra para destaque. */
@@ -51,7 +51,7 @@
   background-color: #000;
   color: #d4af37;
 }
-/* acho que isso ta afetando o  footer ai o texro ta saindo preto la, e a borda amarela. tentei resolver, mas nao foi*/
+
 
 /* Estiliza o botão de envio do formulário de contato com gradiente, sombra e efeitos interativos de hover. */
 .wrap {
@@ -137,7 +137,7 @@
   }
 }
 
-/* É AQUI QUE MEXE NA COR E NAS COISAS LA FO FOOTER, DA PARTE DO EMAIL */
+/*estilização do input do email da pagina no footer*/
 #newsletter1 {
   background-color: white;
   color: rgb(83, 79, 79);

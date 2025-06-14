@@ -10,7 +10,6 @@ Este projeto foi desenvolvido com diversas funcionalidades modernas para criar u
 -   **Design Responsivo:** O layout se adapta perfeitamente a telas de desktops, tablets e celulares (com o grid do Bootstrap e Media Queries).
 -   **Cards de Produto Interativos:** Efeitos de *hover* que elevam o card e dão zoom na imagem do produto.
 -   **Botões de Ação Personalizados:** Botões com gradientes, animações e ícones para uma chamada de ação (CTA) mais eficaz.
--   **Animação de "Adicionar ao Carrinho":** Feedback visual instantâneo com um carrinho que "corre" sobre o botão ao ser clicado.
 -   **Layout Flexível:** O número de produtos por linha se ajusta automaticamente dependendo do tamanho da tela.
 -   **Carrinho:** No carrinho temos diversas formas de pagamento e todas foram personalizadas pensado em trazer a melhor experiencia para os clientes
 
