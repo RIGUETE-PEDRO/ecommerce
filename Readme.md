@@ -1,6 +1,6 @@
 # EcoBelle 🛍️
 
-### Uma loja de e-commerce moderna e responsiva, focada em produtos de beleza e moda, com uma experiência de usuário interativa.
+### Uma loja de e-commerce moderna e responsiva, focada em produtos de beleza, com uma experiência de usuário interativa.
 
 
 ###  Funcionalidades Principais
