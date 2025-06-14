@@ -187,8 +187,6 @@
   display: block; /* mostra a imagem hover no hover */
 }
 
-/* removi o cart-button-shover desse local e joguei para o css dde carinho */
-
 /* Fonte luxo para toda a página */
 body {
   font-family: "Domine", serif;
@@ -515,7 +513,7 @@ html {
 
 
 /* responsavel pelo footer*/
-/* .nav-item2 acho que esta sendo usado pra nada no cod abaixo */
+
 .nav-item2 .nav-link {
   color: #d4af37 !important; /* Cor dourada do texto */
   padding: 1em 1em; /* Espaço interno (padding) ao redor do texto */
@@ -539,7 +537,7 @@ html {
 .remover{
   margin-left: 1em;
 }
-/* o que isso faz? */
+
 
 
 
