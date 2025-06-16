@@ -322,7 +322,7 @@ html {
   display: flex;
   flex-direction: column;
   padding-left: 3rem;
-  padding-right: 3em; /* Ajuste aqui o espaço conforme necessário */
+  padding-right: 3em;
   max-width: 300px;
   border: 1px solid #d4af37; /* linha dourada lateral (vertical) */
   min-height: 100vh; /* altura total da tela se necessário */
@@ -537,9 +537,6 @@ html {
 .remover{
   margin-left: 1em;
 }
-
-
-
 
 /* texto subir */
 .link-body-emphasis-subi{
