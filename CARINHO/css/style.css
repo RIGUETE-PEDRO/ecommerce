@@ -2,7 +2,7 @@
 /* Estiliza o ícone no título do pedido com margem e cor verde. */
 .titulo-pedido i {
   margin-right: 10px;
-  color: #28a745; /* cor do carrinho (pode trocar) */
+  color: #28a745; /* cor do carrinho */
 }
 
 /* Estiliza o contêiner do formulário do carrinho com fundo preto, borda dourada e sombra. */
@@ -110,7 +110,7 @@
 }
 
 /* Estiliza o contêiner do formulário de pagamento com cartão (não utilizado). */
-.wrapper {
+/* .wrapper {
   display: grid;
   place-items: center;
 }
@@ -134,10 +134,10 @@
 
 .form-container .box-form .box-card:nth-child(2) {
   background: url("./../assets/background-card-2.svg"), rgb(17, 24, 39);
-}
+} */
+
 
 /* Reset básico */
-
 .box-input,
 .box-one,
 .box-two {
@@ -223,6 +223,7 @@ input:focus {
 .card-container:hover .card-inner {
   transform: rotateY(180deg);
 }
+
 /*personalização da frente do cartao e do fundo*/
 .card-front,
 .card-back {
@@ -240,7 +241,6 @@ input:focus {
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 /* Verso */
 .card-back {
@@ -293,7 +293,7 @@ input:focus {
   color: #bbb;
   user-select: none;
 }
-/*parte do cod de segurança*/
+/*parte do codigo de segurança*/
 .cvv {
   background: #f3f3f3;
   width: 100%;
@@ -344,7 +344,7 @@ input:focus {
 .info-produto {
   flex: 1;
 }
-/*estilo no nome do prod*/
+/*estilo no nome do produto*/
 .nome-produto {
   font-weight: bold;
   margin-bottom: 5px;
@@ -370,7 +370,7 @@ input:focus {
   width: 100px;
   text-align: right;
 }
-/*estio do remover produto*/
+/*estilo do remover produto*/
 .remover {
   background-color: red;
   color: white;
@@ -383,7 +383,7 @@ input:focus {
 .signature-box .cvv {
   font-weight: bold;
 }
-/*deixar o boleto e o cartao escondido como padrao*/
+/*deixa o boleto e o cartao escondido como padrao*/
 #cartao-container,
 #botao-boleto {
   display: none;

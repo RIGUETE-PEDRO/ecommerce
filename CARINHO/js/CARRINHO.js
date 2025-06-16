@@ -9,7 +9,7 @@ function atualizarTotais() {
         total += subtotal;
     });
     document.getElementById('totalGeral').textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
-    // #totalGeral acho.
+    
 }
 
 document.querySelectorAll('.btn-plus').forEach(btn => {
