@@ -1,7 +1,7 @@
 console.log('Script carregado com sucesso!');
 
     const produtos = [
-        { id: 1, nome: 'Creme Facial Rosa Mosqueta', preco: 59.99, qtd: 1, imagem: '../../img/imgProd/Produto2.png' },
+        { id: 1, nome: 'Creme Facial Rosa Mosqueta', preco: 59.99, qtd: 1, imagem: '../img/imgProd/Produto2.png' },
         { id: 2, nome: 'Sérum Iluminador Raízes', preco: 30.00, qtd: 2, imagem: '../../img/imgProd/Produto1.png' }
     ];
 
