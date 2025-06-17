@@ -421,20 +421,6 @@ html {
   }
 }
 
-.sessao-top {
-  margin-left: 0;
-  padding-left: 0;
-  border-radius: 10px;
-  background-color: #000000; /* Fundo cinza escuro */
-  color: #d4af37; /* Texto dourado */
-  font-family: "Domine", serif; /* Fonte serifada */
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Garante que eles quebrem linha se necessário */
-  gap: 2rem; /* Espaçamento entre os produtos */
-  padding: 2rem 0;
-}
-
 .text {
   color: white;
 }
@@ -448,7 +434,6 @@ html {
 
 .sessao-top2 {
   margin-left: 0;
-  padding-left: 0;
   border-radius: 10px;
   background-color: #323030; /* Fundo cinza escuro */
   color: #d4af37; /* Texto dourado */
@@ -514,7 +499,7 @@ html {
 
 /* responsavel pelo footer*/
 
-.nav-item2 .nav-link {
+.nav-link {
   color: #d4af37 !important; /* Cor dourada do texto */
   padding: 1em 1em; /* Espaço interno (padding) ao redor do texto */
   transition: background-color 0.3s, color 0.3s; /* Transição suave ao mudar cor de fundo e texto */
@@ -525,9 +510,7 @@ html {
     color: #ffffff !important;
     text-decoration: none;
   }
-  .nav-link {
-  transition: color 0.2s ease-in-out;
-}
+
 
 .linha-divisao{
   border-bottom: 0.2em solid #d4af37;

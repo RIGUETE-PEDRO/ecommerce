@@ -109,34 +109,6 @@
   display: none;
 }
 
-/* Estiliza o contêiner do formulário de pagamento com cartão (não utilizado). */
-/* .wrapper {
-  display: grid;
-  place-items: center;
-}
-
-.wrapper .form-container {
-  background-color: var(--formColor);
-  width: 46rem;
-  display: flex;
-  flex-direction: column;
-
-  border-radius: 0.25rem;
-}
-
-.form-container .box-form .box-card {
-  background: url("./../assets/background-card-1.svg"), rgb(17, 24, 39);
-  border-radius: 1rem;
-  background-size: cover;
-  box-shadow: 0 3px 24px rgba(0, 0, 0, 0.25);
-  border: 1px inset #000000a6;
-}
-
-.form-container .box-form .box-card:nth-child(2) {
-  background: url("./../assets/background-card-2.svg"), rgb(17, 24, 39);
-} */
-
-
 /* Reset básico */
 .box-input,
 .box-one,
