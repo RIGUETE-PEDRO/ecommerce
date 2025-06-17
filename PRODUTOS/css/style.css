@@ -4,16 +4,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.2s ease;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 15px; Cantos mais arredondados para um visual suave */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra sutil para dar profundidade */
+  overflow: hidden; /* Garante que nada "vaze" dos cantos arredondados */
+  /* transition: all 0.4s ease-in-out; Animação suave para todas as transições */
+  /* background-color: #ffffff; Fundo branco padrão */
 }
 
+
+/*personalização do mause passando por cima do produto*/
 .product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px); /* Eleva o card um pouco para cima */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); /* Aumenta a sombra para destacar */
 }
+
 
 /* Estiliza o contêiner das imagens dos produtos, garantindo centralização e controle de overflow. */
 .img-container {
@@ -55,21 +60,6 @@
   margin-bottom: auto;
 }
 
-
-
-/*stilo dos card dos produtos*/
-.product-card {
-  border-radius: 15px; /* Cantos mais arredondados para um visual suave */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra sutil para dar profundidade */
-  overflow: hidden; /* Garante que nada "vaze" dos cantos arredondados */
-  transition: all 0.4s ease-in-out; /* Animação suave para todas as transições */
-  background-color: #ffffff; /* Fundo branco padrão */
-}
-/*personalização do mause passando por cima do produto*/
-.product-card:hover {
-  transform: translateY(-10px); /* Eleva o card um pouco para cima */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); /* Aumenta a sombra para destacar */
-}
 
 /*Texto do Preço e Hashtag*/
 .card-text {
